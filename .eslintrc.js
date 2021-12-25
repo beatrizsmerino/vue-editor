@@ -13,7 +13,11 @@ module.exports = {
 		'plugin:vue/recommended',
 		'plugin:json/recommended'
 	],
-	plugins: ['vue', 'json', 'prettier'],
+	plugins: [
+		'vue',
+		'json',
+		'prettier'
+	],
 	rules: {
 		'accessor-pairs': 2,
 		'array-bracket-newline': [
@@ -25,7 +29,10 @@ module.exports = {
 		],
 		'array-bracket-spacing': 2,
 		'array-callback-return': 1,
-		'arrow-body-style': [1, 'as-needed'],
+		'arrow-body-style': [
+			1,
+			'as-needed'
+		],
 		'array-element-newline': [
 			2,
 			{
@@ -74,7 +81,10 @@ module.exports = {
 		'func-name-matching': 2,
 		'func-names': 0,
 		'func-style': 0,
-		'function-call-argument-newline': [2, 'consistent'],
+		'function-call-argument-newline': [
+			2,
+			'consistent'
+		],
 		'function-paren-newline': 2,
 		'generator-star-spacing': 0,
 		'global-require': 0,
@@ -92,8 +102,14 @@ module.exports = {
 		'implicit-arrow-linebreak': 2,
 		'import/no-named-as-default': 0,
 		'init-declarations': 1,
-		'indent': [2, 'tab'],
-		'jsx-quotes': [2, 'prefer-double'],
+		'indent': [
+			2,
+			'tab'
+		],
+		'jsx-quotes': [
+			2,
+			'prefer-double'
+		],
 		'key-spacing': 2,
 		'keyword-spacing': 2,
 		'line-comment-position': 2,
@@ -134,7 +150,10 @@ module.exports = {
 				max: 1
 			}
 		],
-		'multiline-comment-style': [2, 'separate-lines'],
+		'multiline-comment-style': [
+			2,
+			'separate-lines'
+		],
 		'multiline-ternary': 0,
 		'new-cap': [
 			2,
@@ -226,7 +245,9 @@ module.exports = {
 		'no-shadow': [
 			2,
 			{
-				allow: ['state']
+				allow: [
+					'state'
+				]
 			}
 		],
 		'no-spaced-func': 2,
@@ -283,7 +304,10 @@ module.exports = {
 				}
 			}
 		],
-		'object-curly-spacing': [2, 'always'],
+		'object-curly-spacing': [
+			2,
+			'always'
+		],
 		'object-property-newline': [
 			2,
 			{
@@ -295,7 +319,10 @@ module.exports = {
 		'one-var-declaration-per-line': 0,
 		'operator-assignment': 2,
 		'operator-linebreak': 2,
-		'padded-blocks': [1, 'never'],
+		'padded-blocks': [
+			1,
+			'never'
+		],
 		'padding-line-between-statements': 2,
 		'prefer-arrow-callback': [
 			0,
@@ -316,7 +343,10 @@ module.exports = {
 		'prefer-rest-params': 2,
 		'prefer-spread': 2,
 		'prefer-template': 2,
-		'quote-props': [2, 'consistent'],
+		'quote-props': [
+			2,
+			'consistent'
+		],
 		'quotes': [
 			2,
 			'single',
@@ -325,12 +355,18 @@ module.exports = {
 				allowTemplateLiterals: true
 			}
 		],
-		'radix': [2, 'as-needed'],
+		'radix': [
+			2,
+			'as-needed'
+		],
 		'require-atomic-updates': 2,
 		'require-await': 1,
 		'require-unicode-regexp': 2,
 		'rest-spread-spacing': 2,
-		'semi': [2, 'always'],
+		'semi': [
+			2,
+			'always'
+		],
 		'semi-spacing': 2,
 		'semi-style': 2,
 		'sort-imports': 0,
@@ -354,7 +390,10 @@ module.exports = {
 		'symbol-description': 2,
 		'template-curly-spacing': 2,
 		'template-tag-spacing': 2,
-		'unicode-bom': [2, 'never'],
+		'unicode-bom': [
+			2,
+			'never'
+		],
 		'vars-on-top': 2,
 		'wrap-iife': 2,
 		'wrap-regex': 2,
@@ -389,7 +428,10 @@ module.exports = {
 			}
 		],
 		'vue/multi-word-component-names': 0,
-		'vue/component-name-in-template-casing': [2, 'PascalCase'],
+		'vue/component-name-in-template-casing': [
+			2,
+			'PascalCase'
+		],
 		'vue/order-in-components': 2,
 		'vue/no-v-html': 0,
 		'vue/script-indent': [
@@ -405,7 +447,9 @@ module.exports = {
 			2,
 			{
 				ignoreWhenEmpty: true,
-				ignores: ['pre']
+				ignores: [
+					'pre'
+				]
 			}
 		],
 		'vue/no-side-effects-in-computed-properties': 0,
@@ -413,7 +457,9 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: ['*.vue'],
+			files: [
+				'*.vue'
+			],
 			rules: {
 				indent: 'off'
 			}
