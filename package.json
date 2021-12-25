@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+	"prettier:fix": "prettier --write \"./**/*.{vue,js,json}\"",
+    "lint": "npm run prettier:fix"
   },
   "dependencies": {
     "core-js": "^3.20.1",
