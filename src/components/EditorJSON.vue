@@ -27,9 +27,20 @@
 				}
 			};
 		},
+		created() {
+			this.getPikachu();
+		},
 		methods: {
 			onJsonChange(value) {
 				console.log('value:', value);
+			},
+			getPikachu() {
+				const url = 'https://pokeapi.co/api/v2/pokemon/pikachu';
+				fetch(url).
+					then(res => res.json()).
+					then(data => {
+						this.json = data;
+					});
 			}
 		}
 	};
