@@ -1,20 +1,16 @@
 <template>
 	<div class="nav">
 		<ul class="nav__list">
-			<li class="nav__item">
+			<li
+				v-for="(item, index) in navList"
+				:key="index"
+				class="nav__item"
+			>
 				<router-link
-					to="/"
+					:to="item.path"
 					class="nav__link"
 				>
-					Home
-				</router-link>
-			</li>
-			<li class="nav__item">
-				<router-link
-					to="/about"
-					class="nav__link"
-				>
-					About
+					{{ item.name }}
 				</router-link>
 			</li>
 		</ul>
@@ -23,7 +19,22 @@
 
 <script>
 	export default {
-		name: 'Nav'
+		name: 'Nav',
+		data() {
+			return {
+				navList: [
+					{
+						name: 'Home',
+						path: '/'
+					},
+					{
+						name: 'About',
+						path: '/about'
+					}
+				]
+			};
+		}
+
 	};
 </script>
 
