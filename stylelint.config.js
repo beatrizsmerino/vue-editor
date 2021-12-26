@@ -1,5 +1,5 @@
 module.exports = {
-	customSyntax: "postcss-html",
+	customSyntax: 'postcss-html',
 	extends: [
 		'stylelint-config-prettier',
 		'stylelint-config-standard',
