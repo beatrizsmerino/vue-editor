@@ -1,4 +1,5 @@
 const ESLintPlugin = require('eslint-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
 	css: {
@@ -20,6 +21,12 @@ module.exports = {
 				fix: true,
 				files: [
 					'src/**/*.{vue,js}'
+				]
+			}),
+			new StyleLintPlugin({
+				fix: true,
+				files: [
+					'src/**/*.{vue,scss}'
 				]
 			})
 		]
