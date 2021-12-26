@@ -17,9 +17,7 @@
 			</a>
 			.
 		</p>
-		<h3>
-			Installed CLI Plugins
-		</h3>
+		<h3>Installed CLI Plugins</h3>
 		<ul>
 			<li>
 				<a
@@ -58,9 +56,7 @@
 				</a>
 			</li>
 		</ul>
-		<h3>
-			Essential Links
-		</h3>
+		<h3>Essential Links</h3>
 		<ul>
 			<li>
 				<a
@@ -108,9 +104,7 @@
 				</a>
 			</li>
 		</ul>
-		<h3>
-			Ecosystem
-		</h3>
+		<h3>Ecosystem</h3>
 		<ul>
 			<li>
 				<a
