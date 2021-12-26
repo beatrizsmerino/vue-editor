@@ -34,3 +34,75 @@
 		}
 	};
 </script>
+
+<style lang="scss" scoped>
+	.editor-json {
+		::v-deep {
+			.jsoneditor {
+				border-color: mix($color-black, $color-white, 10%) !important;
+
+				.jsoneditor-menu {
+					border-bottom-color: mix($color-black, $color-white, 10%);
+					background-color: mix($color-black, $color-white, 10%);
+
+					button {
+						filter: brightness(0.4);
+
+						&:disabled {
+							filter: brightness(0.6);
+						}
+					}
+
+					.jsoneditor-modes {
+						button {
+							color: $color-carbon;
+						}
+					}
+
+					.jsoneditor-menu {
+						button {
+							filter: none;
+						}
+					}
+				}
+			}
+
+			.jsoneditor-vue {
+				height: 50vh;
+			}
+
+			.jsoneditor-poweredBy {
+				display: none;
+			}
+
+			.jsoneditor-contextmenu {
+				ul {
+					li {
+						background-color: $color-white !important;
+
+						.jsoneditor-selected {
+							background-color: $color-brand-1 !important;
+							color: $color-white !important;
+						}
+					}
+				}
+			}
+
+			.jsoneditor-btns {
+				display: flex;
+				justify-content: flex-end;
+			}
+
+			.json-save-btn {
+				padding: 0.5rem 1rem;
+				background-color: $color-brand-2;
+				color: $color-white;
+				font-size: 1.2rem;
+
+				&:hover {
+					background-color: $color-brand-1;
+				}
+			}
+		}
+	}
+</style>
