@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import Editors from '../views/Editors.vue';
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,11 @@ const routes = [
 		// which is lazy-loaded when the route is visited.
 		/* webpackChunkName: "about" */
 		component: () => import('../views/About.vue')
+	},
+	{
+		path: '/editors',
+		name: 'Editors',
+		component: Editors
 	}
 ];
 

@@ -30,6 +30,10 @@
 					{
 						name: 'About',
 						path: '/about'
+					},
+					{
+						name: 'Editors',
+						path: '/editors'
 					}
 				]
 			};
