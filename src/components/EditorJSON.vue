@@ -3,21 +3,31 @@
 		<h2>
 			Vue JSON editor
 		</h2>
-		<button
-			v-clipboard:copy="JSON.stringify(json)"
-			v-clipboard:success="onCopy"
-			v-clipboard:error="onError"
-			type="button"
-			class="editor-json__button-copy"
-		>
-			Copy
-		</button>
-		<vue-json-editor
-			v-model="json"
-			:show-btns="true"
-			:expanded-on-start="true"
-			@json-change="onJsonChange"
-		/>
+		<div class="editor-json__content">
+			<vue-json-editor
+				v-model="json"
+				:show-btns="false"
+				:expanded-on-start="true"
+				@json-change="onJsonChange"
+			/>
+			<div class="editor-json__actions">
+				<button
+					v-clipboard:copy="JSON.stringify(json)"
+					v-clipboard:success="onCopy"
+					v-clipboard:error="onError"
+					type="button"
+					class="editor-json__button editor-json__button-copy"
+				>
+					Copy
+				</button>
+				<button
+					class="editor-json__button editor-json__button-save"
+					@click="onSave"
+				>
+					Save
+				</button>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -57,6 +67,9 @@
 			onError(e) {
 				alert('Failed to copy JSON to the clipboard');
 				console.log(e);
+			},
+			onSave() {
+				localStorage.setItem('editor-json', JSON.stringify(this.json));
 			}
 		}
 	};
@@ -64,19 +77,45 @@
 
 <style lang="scss" scoped>
 	.editor-json {
-		&__button-copy {
-			margin-bottom: 10px;
+		&__actions {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 1rem;
+
+			>* {
+				&:not(:last-child) {
+					margin-right: 1rem;
+				}
+			}
+		}
+
+		&__button {
 			padding: 0.5rem 1rem;
-			border: 0.1rem solid $color-brand-2;
+			border: 0.1rem solid transparent;
 			border-radius: 0.3rem;
-			background-color: $color-white;
-			color: $color-brand-2;
 			font-size: 1rem;
 			cursor: pointer;
+		}
+
+		&__button-copy {
+			border-color: $color-brand-2;
+			background-color: $color-white;
+			color: $color-brand-2;
 
 			&:hover {
 				background-color: $color-brand-2;
 				color: $color-white;
+			}
+		}
+
+		&__button-save {
+			border-color: $color-brand-2;
+			background-color: $color-brand-2;
+			color: $color-white;
+
+			&:hover {
+				border-color: $color-brand-1;
+				background-color: $color-brand-1;
 			}
 		}
 
