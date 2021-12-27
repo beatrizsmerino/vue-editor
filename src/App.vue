@@ -23,17 +23,4 @@
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
 	}
-
-	.nav {
-		padding: 30px;
-
-		&__link {
-			color: $color-brand-2;
-			font-weight: bold;
-
-			&.router-link-exact-active {
-				color: $color-brand-1;
-			}
-		}
-	}
 </style>

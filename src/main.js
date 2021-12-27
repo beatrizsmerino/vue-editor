@@ -7,6 +7,9 @@ import '@/assets/images/icons/icons-import.js';
 import Icon from '@/components/Icon';
 Vue.component('Icon', Icon);
 
+import VueClipboard from 'vue-clipboard2';
+Vue.use(VueClipboard);
+
 Vue.config.productionTip = false;
 
 new Vue({
