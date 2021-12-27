@@ -14,7 +14,7 @@
 		</button>
 		<vue-json-editor
 			v-model="json"
-			:show-btns="true"
+			:show-btns="false"
 			:expanded-on-start="true"
 			@json-change="onJsonChange"
 		/>
