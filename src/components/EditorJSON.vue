@@ -8,6 +8,7 @@
 			v-clipboard:success="onCopy"
 			v-clipboard:error="onError"
 			type="button"
+			class="editor-json__button-copy"
 		>
 			Copy
 		</button>
@@ -63,6 +64,22 @@
 
 <style lang="scss" scoped>
 	.editor-json {
+		&__button-copy {
+			margin-bottom: 10px;
+			padding: 0.5rem 1rem;
+			border: 0.1rem solid $color-brand-2;
+			border-radius: 0.3rem;
+			background-color: $color-white;
+			color: $color-brand-2;
+			font-size: 1rem;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $color-brand-2;
+				color: $color-white;
+			}
+		}
+
 		::v-deep {
 			.jsoneditor {
 				border-color: mix($color-black, $color-white, 10%) !important;
