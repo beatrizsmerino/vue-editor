@@ -20,7 +20,10 @@
 				>
 					Copy
 				</button>
-				<button class="editor-json__button editor-json__button-save">
+				<button
+					class="editor-json__button editor-json__button-save"
+					@click="onSave"
+				>
 					Save
 				</button>
 			</div>
@@ -64,6 +67,9 @@
 			onError(e) {
 				alert('Failed to copy JSON to the clipboard');
 				console.log(e);
+			},
+			onSave() {
+				localStorage.setItem('editor-json', JSON.stringify(this.json));
 			}
 		}
 	};
