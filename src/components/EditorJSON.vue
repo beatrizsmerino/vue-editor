@@ -3,21 +3,25 @@
 		<h2>
 			Vue JSON editor
 		</h2>
-		<button
-			v-clipboard:copy="JSON.stringify(json)"
-			v-clipboard:success="onCopy"
-			v-clipboard:error="onError"
-			type="button"
-			class="editor-json__button-copy"
-		>
-			Copy
-		</button>
-		<vue-json-editor
-			v-model="json"
-			:show-btns="false"
-			:expanded-on-start="true"
-			@json-change="onJsonChange"
-		/>
+		<div class="editor-json__content">
+			<vue-json-editor
+				v-model="json"
+				:show-btns="false"
+				:expanded-on-start="true"
+				@json-change="onJsonChange"
+			/>
+			<div class="editor-json__actions">
+				<button
+					v-clipboard:copy="JSON.stringify(json)"
+					v-clipboard:success="onCopy"
+					v-clipboard:error="onError"
+					type="button"
+					class="editor-json__button-copy"
+				>
+					Copy
+				</button>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -64,8 +68,13 @@
 
 <style lang="scss" scoped>
 	.editor-json {
+		&__actions {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 1rem;
+		}
+
 		&__button-copy {
-			margin-bottom: 10px;
 			padding: 0.5rem 1rem;
 			border: 0.1rem solid $color-brand-2;
 			border-radius: 0.3rem;
