@@ -16,7 +16,7 @@
 					v-clipboard:success="onCopy"
 					v-clipboard:error="onError"
 					type="button"
-					class="editor-json__button-copy"
+					class="editor-json__button editor-json__button-copy"
 				>
 					Copy
 				</button>
@@ -74,14 +74,18 @@
 			margin-top: 1rem;
 		}
 
-		&__button-copy {
+		&__button {
 			padding: 0.5rem 1rem;
-			border: 0.1rem solid $color-brand-2;
+			border: 0.1rem solid transparent;
 			border-radius: 0.3rem;
-			background-color: $color-white;
-			color: $color-brand-2;
 			font-size: 1rem;
 			cursor: pointer;
+		}
+
+		&__button-copy {
+			border-color: $color-brand-2;
+			background-color: $color-white;
+			color: $color-brand-2;
 
 			&:hover {
 				background-color: $color-brand-2;
