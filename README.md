@@ -1,5 +1,7 @@
 # Vue editor
 
+![Vue editor](./README/images/vue-editor.png)
+
 Using `vue-json-editor` and `svg-symbol-sprite-loader` together
 
 ## Project setup
