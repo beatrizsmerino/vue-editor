@@ -1,5 +1,7 @@
 # Vue editor
 
+![Vue editor](./README/images/vue-editor.png)
+
 Using `vue-json-editor` and `svg-symbol-sprite-loader` together
 
 ## Project setup
@@ -20,6 +22,11 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Publish in Github Pages
+```
+npm run deploy
 ```
 
 ### Customize configuration
