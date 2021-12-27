@@ -3,6 +3,14 @@
 		<h2>
 			Vue JSON editor
 		</h2>
+		<button
+			v-clipboard:copy="JSON.stringify(json)"
+			v-clipboard:success="onCopy"
+			v-clipboard:error="onError"
+			type="button"
+		>
+			Copy
+		</button>
 		<vue-json-editor
 			v-model="json"
 			:show-btns="true"
@@ -41,6 +49,13 @@
 					then(data => {
 						this.json = data;
 					});
+			},
+			onCopy() {
+				alert('Copied JSON to the clipboard');
+			},
+			onError(e) {
+				alert('Failed to copy JSON to the clipboard');
+				console.log(e);
 			}
 		}
 	};
