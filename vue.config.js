@@ -7,6 +7,8 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const resolve = dir => path.join(__dirname, dir);
 
 module.exports = {
+
+	// Add configuration for use Dart sass/scss and compile files of 'assets' folder
 	css: {
 		loaderOptions: {
 			scss: {
