@@ -20,6 +20,9 @@
 				>
 					Copy
 				</button>
+				<button class="editor-json__button editor-json__button-save">
+					Save
+				</button>
 			</div>
 		</div>
 	</div>
@@ -72,6 +75,12 @@
 			display: flex;
 			justify-content: flex-end;
 			margin-top: 1rem;
+
+			>* {
+				&:not(:last-child) {
+					margin-right: 1rem;
+				}
+			}
 		}
 
 		&__button {
@@ -90,6 +99,17 @@
 			&:hover {
 				background-color: $color-brand-2;
 				color: $color-white;
+			}
+		}
+
+		&__button-save {
+			border-color: $color-brand-2;
+			background-color: $color-brand-2;
+			color: $color-white;
+
+			&:hover {
+				border-color: $color-brand-1;
+				background-color: $color-brand-1;
 			}
 		}
 
