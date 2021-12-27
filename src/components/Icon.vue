@@ -33,7 +33,6 @@
 				type: String,
 				default: ''
 			}
-
 		},
 		computed: {
 			iconId() {

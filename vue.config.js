@@ -7,6 +7,11 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const resolve = dir => path.join(__dirname, dir);
 
 module.exports = {
+
+	// The base URL your application bundle will be deployed at
+	publicPath: process.env.NODE_ENV === 'production' ? '/vue-editor/' : '/',
+
+	// Add configuration for use Dart sass/scss and compile files of 'assets' folder
 	css: {
 		loaderOptions: {
 			scss: {

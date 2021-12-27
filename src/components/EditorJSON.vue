@@ -1,8 +1,6 @@
 <template>
 	<div class="editor-json">
-		<h2>
-			Vue JSON editor
-		</h2>
+		<h2>Vue JSON editor</h2>
 		<div class="editor-json__content">
 			<vue-json-editor
 				v-model="json"
@@ -82,7 +80,7 @@
 			justify-content: flex-end;
 			margin-top: 1rem;
 
-			>* {
+			> * {
 				&:not(:last-child) {
 					margin-right: 1rem;
 				}
