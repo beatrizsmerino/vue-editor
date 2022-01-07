@@ -24,15 +24,18 @@ module.exports = {
 	// https://cli.vuejs.org/config/#lintonsave
 	lintOnSave: true,
 
-	// Add configuration for autofix stylelint errors
 	configureWebpack: {
 		plugins: [
+
+			// Add configuration for autofix eslint errors
 			new ESLintPlugin({
 				fix: true,
 				files: [
 					'src/**/*.{vue,js}'
 				]
 			}),
+
+			// Add configuration for autofix stylelint errors
 			new StyleLintPlugin({
 				fix: true,
 				files: [
