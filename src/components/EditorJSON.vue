@@ -60,9 +60,11 @@
 					});
 			},
 			onCopy() {
+				// eslint-disable-next-line no-alert
 				alert('Copied JSON to the clipboard');
 			},
 			onError(e) {
+				// eslint-disable-next-line no-alert, no-console
 				alert('Failed to copy JSON to the clipboard');
 				console.log(e);
 			},
