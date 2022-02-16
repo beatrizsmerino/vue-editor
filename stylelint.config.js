@@ -108,6 +108,14 @@ module.exports = {
 		'function-linear-gradient-no-nonstandard-direction': true,
 		'function-max-empty-lines': 0,
 		'function-name-case': 'lower',
+		'function-no-unknown': [
+			true,
+			{
+				ignoreFunctions: [
+					'mix'
+				]
+			}
+		],
 		'function-parentheses-newline-inside': 'always-multi-line',
 		'function-parentheses-space-inside': 'never-single-line',
 		'function-whitespace-after': 'always',
