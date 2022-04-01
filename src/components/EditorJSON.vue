@@ -1,6 +1,8 @@
 <template>
 	<div class="editor-json">
-		<h2>Vue JSON editor</h2>
+		<h2 class="page__subtitle">
+			Vue JSON editor
+		</h2>
 		<div class="editor-json__content">
 			<vue-json-editor
 				v-model="json"
@@ -90,10 +92,11 @@
 		}
 
 		&__button {
-			padding: 0.5rem 1rem;
-			border: 0.1rem solid transparent;
+			padding: 0.5rem 1.5rem;
+			border: 0.2rem solid transparent;
 			border-radius: 0.3rem;
-			font-size: 1rem;
+			font-size: 1.6rem;
+			font-weight: bold;
 			cursor: pointer;
 		}
 
