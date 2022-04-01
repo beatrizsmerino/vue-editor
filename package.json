@@ -51,7 +51,8 @@
 		"stylelint-config-standard": "^25.0.0",
 		"stylelint-scss": "^4.2.0",
 		"stylelint-webpack-plugin": "^3.2.0",
-		"vue-template-compiler": "^2.6.14"
+		"vue-template-compiler": "^2.6.14",
+		"webpack": "^4.46.0"
 	},
 	"resolutions": {
 		"ansi-regex": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
