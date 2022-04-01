@@ -1,0 +1,58 @@
+// COMPONENTS
+// GENERICS
+// =================================================
+
+*::selection {
+	color: $color-white;
+	background-color: $color-brand-1;
+}
+
+// FONT
+// ------------------
+html,
+body,
+textarea,
+select,
+input,
+button {
+	font-family: $font-1;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: $font-size--html;
+	font-weight: 400;
+	background-color: $color-white;
+}
+
+body {
+	font-size: $font-size--body;
+	background-color: $color-white;
+}
+
+// LINK
+// ------------------
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		color: inherit;
+	}
+}
+
+// TEXT
+// ------------------
+p {
+	font-size: 1.6rem;
+	line-height: 160%;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	&:only-of-type {
+		margin-bottom: 0;
+	}
+}

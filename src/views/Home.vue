@@ -1,14 +1,12 @@
 <template>
-	<div class="home">
+	<div class="page__inner page__container">
 		<Icon name="logoVue" />
 		<HelloWorld msg="Welcome to Your Vue.js App" />
 	</div>
 </template>
 
 <script>
-
-	// @ is an alias to /src
-	import HelloWorld from '@/components/HelloWorld.vue';
+	import HelloWorld from '@/components/HelloWorld';
 
 	export default {
 		name: 'Home',
@@ -19,11 +17,11 @@
 </script>
 
 <style lang="scss" scoped>
-	.home {
-		.icon-logo-vue {
-			width: 150px;
-			height: 150px;
-			margin: 0 auto;
-		}
+.page-home {
+	.icon-logo-vue {
+		width: 15rem;
+		height: 15rem;
+		margin: 0 auto 3rem;
 	}
+}
 </style>
