@@ -1,5 +1,5 @@
 <template>
-	<div class="editor-json theme--brand-1">
+	<div class="editor-json theme--light">
 		<h2 class="page__subtitle">
 			Vue JSON editor
 		</h2>
@@ -100,28 +100,6 @@
 			cursor: pointer;
 		}
 
-		&__button-copy {
-			border-color: $color-brand-2;
-			background-color: $color-white;
-			color: $color-brand-2;
-
-			&:hover {
-				background-color: $color-brand-2;
-				color: $color-white;
-			}
-		}
-
-		&__button-save {
-			border-color: $color-brand-2;
-			background-color: $color-brand-2;
-			color: $color-white;
-
-			&:hover {
-				border-color: $color-brand-1;
-				background-color: $color-brand-1;
-			}
-		}
-
 		::v-deep {
 			.jsoneditor-vue {
 				height: 50vh;
@@ -151,14 +129,34 @@
 
 		&.theme {
 			&--light {
+				.editor-json {
+					&__button-copy {
+						border-color: mix($color-black, $color-white, 20%);
+						background-color: $color-white;
+						color: mix($color-black, $color-white, 20%);
+
+						&:hover {
+							border-color: mix($color-black, $color-white, 30%);
+							background-color: mix($color-black, $color-white, 30%);
+							color: $color-white;
+						}
+					}
+
+					&__button-save {
+						border-color: mix($color-black, $color-white, 20%);
+						background-color: mix($color-black, $color-white, 20%);
+						color: $color-white;
+
+						&:hover {
+							border-color: mix($color-black, $color-white, 30%);
+							background-color: mix($color-black, $color-white, 30%);
+						}
+					}
+				}
+
 				::v-deep {
 					.jsoneditor {
-						border-color:
-							mix(
-								$color-black,
-								$color-white,
-								10%
-							) !important;
+						border-color: mix($color-black, $color-white, 10%) !important;
 					}
 
 					.jsoneditor-menu {
@@ -186,12 +184,7 @@
 								background-color: $color-white !important;
 
 								.jsoneditor-selected {
-									background-color:
-										mix(
-											$color-black,
-											$color-white,
-											10%
-										) !important;
+									background-color: mix($color-black, $color-white, 10%) !important;
 									color: $color-carbon !important;
 								}
 							}
@@ -210,6 +203,31 @@
 			}
 
 			&--brand-1 {
+				.editor-json {
+					&__button-copy {
+						border-color: $color-brand-1;
+						background-color: $color-white;
+						color: $color-brand-1;
+
+						&:hover {
+							border-color: $color-brand-2;
+							background-color: $color-white;
+							color: $color-brand-2;
+						}
+					}
+
+					&__button-save {
+						border-color: $color-brand-1;
+						background-color: $color-brand-1;
+						color: $color-white;
+
+						&:hover {
+							border-color: $color-brand-2;
+							background-color: $color-brand-2;
+						}
+					}
+				}
+
 				::v-deep {
 					.jsoneditor {
 						border-color: $color-brand-1;
@@ -248,6 +266,31 @@
 			}
 
 			&--brand-2 {
+				.editor-json {
+					&__button-copy {
+						border-color: $color-brand-2;
+						background-color: $color-white;
+						color: $color-brand-2;
+
+						&:hover {
+							border-color: $color-brand-1;
+							background-color: $color-white;
+							color: $color-brand-1;
+						}
+					}
+
+					&__button-save {
+						border-color: $color-brand-2;
+						background-color: $color-brand-2;
+						color: $color-white;
+
+						&:hover {
+							border-color: $color-brand-1;
+							background-color: $color-brand-1;
+						}
+					}
+				}
+
 				::v-deep {
 					.jsoneditor {
 						border-color: $color-brand-2;
