@@ -1,5 +1,5 @@
 <template>
-	<div class="editor-json theme--light">
+	<div class="editor-json theme--brand-2">
 		<h2 class="page__subtitle">
 			Vue JSON editor
 		</h2>
