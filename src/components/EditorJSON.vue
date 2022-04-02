@@ -6,7 +6,7 @@
 		<div class="editor-json__content">
 			<vue-json-editor
 				v-model="json"
-				class="theme--light"
+				class="theme--brand-2"
 				:show-btns="false"
 				:expanded-on-start="true"
 				@json-change="onJsonChange"
@@ -193,6 +193,51 @@
 
 						&:hover {
 							background-color: mix($color-black, $color-white, 10%);
+						}
+					}
+				}
+
+				&--brand-2 {
+					.jsoneditor {
+						border-color: $color-brand-2;
+					}
+
+					.jsoneditor-menu {
+						border-bottom-color: $color-brand-2;
+						background-color: $color-brand-2;
+
+						button {
+							filter: brightness(0) saturate(100%) invert(100%);
+
+							&:disabled {
+								filter: brightness(0) saturate(100%) invert(100%);
+							}
+						}
+					}
+
+					.jsoneditor-contextmenu {
+						ul {
+							li {
+								background-color: $color-white !important;
+
+								button {
+									color: $color-carbon !important;
+
+									&.jsoneditor-selected {
+										background-color: $color-brand-2 !important;
+										color: $color-white !important;
+									}
+								}
+							}
+						}
+					}
+
+					.json-save-btn {
+						background-color: $color-brand-2;
+						color: $color-white;
+
+						&:hover {
+							background-color: $color-brand-1;
 						}
 					}
 				}
