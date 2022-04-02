@@ -1,14 +1,14 @@
 <template>
-	<div class="editors">
-		<h1>Editors page</h1>
+	<div class="page__inner page__container">
+		<h1 class="page__title">
+			Editors page
+		</h1>
 		<EditorJSON />
 	</div>
 </template>
 
 <script>
-
-	// @ is an alias to /src
-	import EditorJSON from '@/components/EditorJSON.vue';
+	import EditorJSON from '@/components/EditorJSON';
 
 	export default {
 		name: 'Editors',
