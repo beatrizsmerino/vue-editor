@@ -6,6 +6,7 @@
 		<div class="editor-json__content">
 			<vue-json-editor
 				v-model="json"
+				class="theme--light"
 				:show-btns="false"
 				:expanded-on-start="true"
 				@json-change="onJsonChange"
@@ -123,54 +124,12 @@
 		}
 
 		::v-deep {
-			.jsoneditor {
-				border-color: mix($color-black, $color-white, 10%) !important;
-
-				.jsoneditor-menu {
-					border-bottom-color: mix($color-black, $color-white, 10%);
-					background-color: mix($color-black, $color-white, 10%);
-
-					button {
-						filter: brightness(0.4);
-
-						&:disabled {
-							filter: brightness(0.6);
-						}
-					}
-
-					.jsoneditor-modes {
-						button {
-							color: $color-carbon;
-						}
-					}
-
-					.jsoneditor-menu {
-						button {
-							filter: none;
-						}
-					}
-				}
-			}
-
 			.jsoneditor-vue {
 				height: 50vh;
 			}
 
 			.jsoneditor-poweredBy {
 				display: none;
-			}
-
-			.jsoneditor-contextmenu {
-				ul {
-					li {
-						background-color: $color-white !important;
-
-						.jsoneditor-selected {
-							background-color: $color-brand-1 !important;
-							color: $color-white !important;
-						}
-					}
-				}
 			}
 
 			.jsoneditor-btns {
@@ -180,12 +139,62 @@
 
 			.json-save-btn {
 				padding: 0.5rem 1rem;
-				background-color: $color-brand-2;
-				color: $color-white;
 				font-size: 1.2rem;
+			}
 
-				&:hover {
-					background-color: $color-brand-1;
+			.jsoneditor-contextmenu,
+			.jsoneditor-frame {
+				button {
+					filter: none !important;
+				}
+			}
+
+			.theme {
+				&--light {
+					.jsoneditor {
+						border-color: mix($color-black, $color-white, 10%) !important;
+					}
+
+					.jsoneditor-menu {
+						border-bottom-color: mix($color-black, $color-white, 10%);
+						background-color: mix($color-black, $color-white, 10%);
+
+						button {
+							filter: brightness(0.4);
+
+							&:disabled {
+								filter: brightness(0.6);
+							}
+						}
+
+						.jsoneditor-modes {
+							button {
+								color: $color-carbon;
+							}
+						}
+					}
+
+					.jsoneditor-contextmenu {
+						ul {
+							li {
+								background-color: $color-white !important;
+
+								.jsoneditor-selected {
+									background-color: mix($color-black, $color-white, 10%) !important;
+									color: $color-carbon !important;
+								}
+							}
+						}
+					}
+
+					.json-save-btn {
+						background-color: $color-carbon;
+						color: $color-white;
+
+						&:hover {
+							background-color: mix($color-black, $color-white, 10%);
+						}
+					}
 				}
 			}
 		}
