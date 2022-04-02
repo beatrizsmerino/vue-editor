@@ -1,12 +1,11 @@
 <template>
-	<div class="editor-json">
+	<div class="editor-json theme--brand-1">
 		<h2 class="page__subtitle">
 			Vue JSON editor
 		</h2>
 		<div class="editor-json__content">
 			<vue-json-editor
 				v-model="json"
-				class="theme--brand-1"
 				:show-btns="false"
 				:expanded-on-start="true"
 				@json-change="onJsonChange"
@@ -148,11 +147,18 @@
 					filter: none !important;
 				}
 			}
+		}
 
-			.theme {
-				&--light {
+		&.theme {
+			&--light {
+				::v-deep {
 					.jsoneditor {
-						border-color: mix($color-black, $color-white, 10%) !important;
+						border-color:
+							mix(
+								$color-black,
+								$color-white,
+								10%
+							) !important;
 					}
 
 					.jsoneditor-menu {
@@ -180,7 +186,12 @@
 								background-color: $color-white !important;
 
 								.jsoneditor-selected {
-									background-color: mix($color-black, $color-white, 10%) !important;
+									background-color:
+										mix(
+											$color-black,
+											$color-white,
+											10%
+										) !important;
 									color: $color-carbon !important;
 								}
 							}
@@ -196,8 +207,10 @@
 						}
 					}
 				}
+			}
 
-				&--brand-1 {
+			&--brand-1 {
+				::v-deep {
 					.jsoneditor {
 						border-color: $color-brand-1;
 					}
@@ -232,8 +245,10 @@
 						}
 					}
 				}
+			}
 
-				&--brand-2 {
+			&--brand-2 {
+				::v-deep {
 					.jsoneditor {
 						border-color: $color-brand-2;
 					}
