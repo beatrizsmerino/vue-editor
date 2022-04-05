@@ -1,5 +1,5 @@
 <template>
-	<div class="nav">
+	<div class="nav page__inner">
 		<ul class="nav__list">
 			<li
 				v-for="(item, index) in navList"
@@ -45,7 +45,6 @@
 	.nav {
 		display: flex;
 		justify-content: center;
-		padding: 30px;
 
 		&__list {
 			display: flex;
