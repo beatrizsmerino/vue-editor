@@ -170,6 +170,11 @@ module.exports = {
 		'selector-descendant-combinator-no-non-space': true,
 		'selector-list-comma-newline-after': 'always',
 		'selector-list-comma-space-before': 'never',
+		'selector-no-qualifying-type': [
+			true, {
+				"ignore": ["attribute", "class"]
+			  }
+		],
 		'selector-max-compound-selectors': null,
 		'selector-max-empty-lines': 0,
 		'selector-max-id': 1,
