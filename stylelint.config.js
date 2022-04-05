@@ -171,9 +171,13 @@ module.exports = {
 		'selector-list-comma-newline-after': 'always',
 		'selector-list-comma-space-before': 'never',
 		'selector-no-qualifying-type': [
-			true, {
-				"ignore": ["attribute", "class"]
-			  }
+			true,
+			{
+				ignore: [
+					'attribute',
+					'class'
+				]
+			}
 		],
 		'selector-max-compound-selectors': null,
 		'selector-max-empty-lines': 0,

@@ -180,24 +180,24 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.page {
-	&__subtitle {
-		margin-bottom: 1rem;
+	.page {
+		&__subtitle {
+			margin-bottom: 1rem;
+		}
 	}
-}
 
-ul {
-	padding: 0;
-	list-style-type: none;
-}
+	ul {
+		padding: 0;
+		list-style-type: none;
+	}
 
-li {
-	display: inline-block;
-	margin: 0 10px;
-}
+	li {
+		display: inline-block;
+		margin: 0 10px;
+	}
 
-a {
-	color: $color-brand-1;
-	font-weight: 500;
-}
+	a {
+		color: $color-brand-1;
+		font-weight: 500;
+	}
 </style>
