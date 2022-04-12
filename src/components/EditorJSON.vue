@@ -137,7 +137,12 @@
 
 						&:hover {
 							border-color: mix($color-black, $color-white, 30%);
-							background-color: mix($color-black, $color-white, 30%);
+							background-color:
+								mix(
+									$color-black,
+									$color-white,
+									30%
+								);
 							color: $color-white;
 						}
 					}
@@ -149,18 +154,33 @@
 
 						&:hover {
 							border-color: mix($color-black, $color-white, 30%);
-							background-color: mix($color-black, $color-white, 30%);
+							background-color:
+								mix(
+									$color-black,
+									$color-white,
+									30%
+								);
 						}
 					}
 				}
 
 				::v-deep {
 					.jsoneditor {
-						border-color: mix($color-black, $color-white, 10%) !important;
+						border-color:
+							mix(
+								$color-black,
+								$color-white,
+								10%
+							) !important;
 					}
 
 					.jsoneditor-menu {
-						border-bottom-color: mix($color-black, $color-white, 10%);
+						border-bottom-color:
+							mix(
+								$color-black,
+								$color-white,
+								10%
+							);
 						background-color: mix($color-black, $color-white, 10%);
 
 						button {
@@ -184,7 +204,12 @@
 								background-color: $color-white !important;
 
 								.jsoneditor-selected {
-									background-color: mix($color-black, $color-white, 10%) !important;
+									background-color:
+										mix(
+											$color-black,
+											$color-white,
+											10%
+										) !important;
 									color: $color-carbon !important;
 								}
 							}
@@ -196,7 +221,12 @@
 						color: $color-white;
 
 						&:hover {
-							background-color: mix($color-black, $color-white, 10%);
+							background-color:
+								mix(
+									$color-black,
+									$color-white,
+									10%
+								);
 						}
 					}
 				}
@@ -241,7 +271,9 @@
 							filter: brightness(0) saturate(100%) invert(100%);
 
 							&:disabled {
-								filter: brightness(0) saturate(100%) invert(100%);
+								filter:
+									brightness(0) saturate(100%)
+									invert(100%);
 							}
 						}
 					}
@@ -304,7 +336,9 @@
 							filter: brightness(0) saturate(100%) invert(100%);
 
 							&:disabled {
-								filter: brightness(0) saturate(100%) invert(100%);
+								filter:
+									brightness(0) saturate(100%)
+									invert(100%);
 							}
 						}
 					}
