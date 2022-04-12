@@ -18,13 +18,23 @@
 					type="button"
 					class="editor-json__button editor-json__button-copy"
 				>
-					Copy
+					<Icon
+						name="copy"
+						aria-label="Copy json"
+						title="Copy json"
+					/>
+					<span>Copy</span>
 				</button>
 				<button
 					class="editor-json__button editor-json__button-save"
 					@click="onSave"
 				>
-					Save
+					<Icon
+						name="save"
+						aria-label="Save json"
+						title="Save json"
+					/>
+					<span>Save</span>
 				</button>
 			</div>
 		</div>
@@ -92,12 +102,20 @@
 		}
 
 		&__button {
+			display: flex;
+			align-items: center;
 			padding: 0.5rem 1.5rem;
 			border: 0.2rem solid transparent;
 			border-radius: 0.3rem;
 			font-size: 1.6rem;
 			font-weight: bold;
 			cursor: pointer;
+
+			> * {
+				&:not(:last-child) {
+					margin-right: 0.5rem;
+				}
+			}
 		}
 
 		::v-deep {
