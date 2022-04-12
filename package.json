@@ -19,7 +19,7 @@
 		"execa": "^5.1.1",
 		"node-emoji": "^1.11.0",
 		"svg-symbol-sprite-loader": "^4.0.0",
-		"vue": "^2.6.14",
+		"vue": "^3.2.32",
 		"vue-clipboard2": "^0.3.3",
 		"vue-json-editor": "^1.4.3",
 		"vue-router": "^3.5.3",
