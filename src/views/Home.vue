@@ -1,6 +1,10 @@
 <template>
 	<div class="page__inner page__container">
-		<Icon name="logoVue" />
+		<Icon
+			name="logoVue"
+			aria-label="Vue logo"
+			title="Vue logo"
+		/>
 		<HelloWorld msg="Welcome to Your Vue.js App" />
 	</div>
 </template>
