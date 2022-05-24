@@ -1,14 +1,14 @@
 <template>
-	<div class="nav page__inner">
-		<ul class="nav__list">
+	<div class="page-nav page__inner">
+		<ul class="page-nav__list">
 			<li
 				v-for="(item, index) in navList"
 				:key="index"
-				class="nav__item"
+				class="page-nav__item"
 			>
 				<router-link
 					:to="item.path"
-					class="nav__link"
+					class="page-nav__link"
 				>
 					{{ item.name }}
 				</router-link>
@@ -19,7 +19,7 @@
 
 <script>
 	export default {
-		name: 'Nav',
+		name: 'PageNav',
 		data() {
 			return {
 				navList: [
@@ -42,7 +42,7 @@
 </script>
 
 <style lang="scss" scoped>
-	.nav {
+	.page-nav {
 		display: flex;
 		justify-content: center;
 
