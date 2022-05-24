@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<header class="page__header">
-			<Nav />
+			<PageNav />
 		</header>
 		<main class="page__main">
 			<router-view />
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-	import Nav from '@/components/Nav';
+	import PageNav from '@/components/PageNav';
 	export default {
 		name: 'App',
 		components: {
-			Nav
+			PageNav
 		},
 		watch: {
 			$route: {
