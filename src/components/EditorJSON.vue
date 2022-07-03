@@ -118,30 +118,28 @@
 			}
 		}
 
-		::v-deep {
-			.jsoneditor-vue {
-				height: 50vh;
-			}
+		:deep(.jsoneditor-vue) {
+			height: 50vh;
+		}
 
-			.jsoneditor-poweredBy {
-				display: none;
-			}
+		:deep(.jsoneditor-poweredBy) {
+			display: none;
+		}
 
-			.jsoneditor-btns {
-				display: flex;
-				justify-content: flex-end;
-			}
+		:deep(.jsoneditor-btns) {
+			display: flex;
+			justify-content: flex-end;
+		}
 
-			.json-save-btn {
-				padding: 0.5rem 1rem;
-				font-size: 1.2rem;
-			}
+		:deep(.json-save-btn) {
+			padding: 0.5rem 1rem;
+			font-size: 1.2rem;
+		}
 
-			.jsoneditor-contextmenu,
-			.jsoneditor-frame {
-				button {
-					filter: none !important;
-				}
+		:deep(.jsoneditor-contextmenu),
+		:deep(.jsoneditor-frame) {
+			button {
+				filter: none !important;
 			}
 		}
 
@@ -182,70 +180,58 @@
 					}
 				}
 
-				::v-deep {
-					.jsoneditor {
-						border-color:
-							mix(
-								$color-black,
-								$color-white,
-								10%
-							) !important;
+				:deep(.jsoneditor) {
+					border-color:
+						mix(
+							$color-black,
+							$color-white,
+							10%
+						) !important;
+				}
+
+				:deep(.jsoneditor-menu) {
+					border-bottom-color: mix($color-black, $color-white, 10%);
+					background-color: mix($color-black, $color-white, 10%);
+
+					button {
+						filter: brightness(0.4);
+
+						&:disabled {
+							filter: brightness(0.6);
+						}
 					}
 
-					.jsoneditor-menu {
-						border-bottom-color:
-							mix(
-								$color-black,
-								$color-white,
-								10%
-							);
-						background-color: mix($color-black, $color-white, 10%);
-
+					.jsoneditor-modes {
 						button {
-							filter: brightness(0.4);
-
-							&:disabled {
-								filter: brightness(0.6);
-							}
+							color: $color-carbon;
 						}
+					}
+				}
 
-						.jsoneditor-modes {
-							button {
-								color: $color-carbon;
+				:deep(.jsoneditor-contextmenu) {
+					ul {
+						li {
+							background-color: $color-white !important;
+
+							.jsoneditor-selected {
+								background-color:
+									mix(
+										$color-black,
+										$color-white,
+										10%
+									) !important;
+								color: $color-carbon !important;
 							}
 						}
 					}
+				}
 
-					.jsoneditor-contextmenu {
-						ul {
-							li {
-								background-color: $color-white !important;
+				:deep(.json-save-btn) {
+					background-color: $color-carbon;
+					color: $color-white;
 
-								.jsoneditor-selected {
-									background-color:
-										mix(
-											$color-black,
-											$color-white,
-											10%
-										) !important;
-									color: $color-carbon !important;
-								}
-							}
-						}
-					}
-
-					.json-save-btn {
-						background-color: $color-carbon;
-						color: $color-white;
-
-						&:hover {
-							background-color:
-								mix(
-									$color-black,
-									$color-white,
-									10%
-								);
-						}
+					&:hover {
+						background-color: mix($color-black, $color-white, 10%);
 					}
 				}
 			}
@@ -276,38 +262,34 @@
 					}
 				}
 
-				::v-deep {
-					.jsoneditor {
-						border-color: $color-brand-1;
-					}
+				:deep(.jsoneditor) {
+					border-color: $color-brand-1;
+				}
 
-					.jsoneditor-menu {
-						border-bottom-color: $color-brand-1;
-						background-color: $color-brand-1;
+				:deep(.jsoneditor-menu) {
+					border-bottom-color: $color-brand-1;
+					background-color: $color-brand-1;
 
-						button {
+					button {
+						filter: brightness(0) saturate(100%) invert(100%);
+
+						&:disabled {
 							filter: brightness(0) saturate(100%) invert(100%);
-
-							&:disabled {
-								filter:
-									brightness(0) saturate(100%)
-									invert(100%);
-							}
 						}
 					}
+				}
 
-					.jsoneditor-contextmenu {
-						ul {
-							li {
-								background-color: $color-white !important;
+				:deep(.jsoneditor-contextmenu) {
+					ul {
+						li {
+							background-color: $color-white !important;
 
-								button {
-									color: $color-carbon !important;
+							button {
+								color: $color-carbon !important;
 
-									&.jsoneditor-selected {
-										background-color: $color-brand-1 !important;
-										color: $color-white !important;
-									}
+								&.jsoneditor-selected {
+									background-color: $color-brand-1 !important;
+									color: $color-white !important;
 								}
 							}
 						}
@@ -341,50 +323,46 @@
 					}
 				}
 
-				::v-deep {
-					.jsoneditor {
-						border-color: $color-brand-2;
-					}
+				:deep(.jsoneditor) {
+					border-color: $color-brand-2;
+				}
 
-					.jsoneditor-menu {
-						border-bottom-color: $color-brand-2;
-						background-color: $color-brand-2;
+				:deep(.jsoneditor-menu) {
+					border-bottom-color: $color-brand-2;
+					background-color: $color-brand-2;
 
-						button {
+					button {
+						filter: brightness(0) saturate(100%) invert(100%);
+
+						&:disabled {
 							filter: brightness(0) saturate(100%) invert(100%);
-
-							&:disabled {
-								filter:
-									brightness(0) saturate(100%)
-									invert(100%);
-							}
 						}
 					}
+				}
 
-					.jsoneditor-contextmenu {
-						ul {
-							li {
-								background-color: $color-white !important;
+				:deep(.jsoneditor-contextmenu) {
+					ul {
+						li {
+							background-color: $color-white !important;
 
-								button {
-									color: $color-carbon !important;
+							button {
+								color: $color-carbon !important;
 
-									&.jsoneditor-selected {
-										background-color: $color-brand-2 !important;
-										color: $color-white !important;
-									}
+								&.jsoneditor-selected {
+									background-color: $color-brand-2 !important;
+									color: $color-white !important;
 								}
 							}
 						}
 					}
+				}
 
-					.json-save-btn {
-						background-color: $color-brand-2;
-						color: $color-white;
+				::v-deep(.json-save-btn) {
+					background-color: $color-brand-2;
+					color: $color-white;
 
-						&:hover {
-							background-color: $color-brand-1;
-						}
+					&:hover {
+						background-color: $color-brand-1;
 					}
 				}
 			}

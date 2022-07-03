@@ -183,7 +183,15 @@ module.exports = {
 		'selector-max-empty-lines': 0,
 		'selector-max-id': 1,
 		'selector-pseudo-class-case': 'lower',
-		'selector-pseudo-class-no-unknown': true,
+		'selector-pseudo-class-no-unknown': [
+			true,
+			{
+				ignorePseudoClasses: [
+					'v-deep',
+					'deep'
+				]
+			}
+		],
 		'selector-pseudo-class-parentheses-space-inside': 'never',
 		'selector-pseudo-element-case': 'lower',
 		'selector-pseudo-element-colon-notation': 'single',
@@ -191,7 +199,8 @@ module.exports = {
 			true,
 			{
 				ignorePseudoElements: [
-					'v-deep'
+					'v-deep',
+					'deep'
 				]
 			}
 		],
