@@ -3,8 +3,11 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"preinstall": "rm -rf node_modules package-lock.json && npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions",
-		"postinstall": "npm run lint",
+		"install:clean": "rm -rf node_modules package-lock.json",
+		"install:fix": "npx npm-force-resolutions",
+		"preinstall": "npm run install:clean",
+		"install": "([ ! -f package-lock.json ] && npm install --package-lock-only --ignore-scripts --no-audit)",
+		"postinstall": "npm run install:fix && npm run lint",
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
 		"prettier:fix": "prettier --write \"./**/*.{vue,js,json}\"",
@@ -61,7 +64,7 @@
 		"nth-check": "https://registry.npmjs.org/nth-check/-/nth-check-2.0.1.tgz"
 	},
 	"volta": {
-		"node": "14.19.3",
-		"npm": "6.14.17"
+		"node": "16.15.1",
+		"npm": "8.13.2"
 	}
 }
