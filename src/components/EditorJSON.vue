@@ -61,7 +61,9 @@
 		},
 		methods: {
 			onJsonChange(value) {
+				/* eslint-disable no-alert, no-console, no-debugger */
 				console.log('value:', value);
+				/* eslint-enable no-alert, no-console */
 			},
 			getPikachu() {
 				const url = 'https://pokeapi.co/api/v2/pokemon/pikachu';
@@ -72,13 +74,15 @@
 					});
 			},
 			onCopy() {
-				// eslint-disable-next-line no-alert
+				/* eslint-disable no-alert, no-console, no-debugger */
 				alert('Copied JSON to the clipboard');
+				/* eslint-enable no-alert, no-console */
 			},
 			onError(e) {
-				// eslint-disable-next-line no-alert, no-console
+				/* eslint-disable no-alert, no-console, no-debugger */
 				alert('Failed to copy JSON to the clipboard');
 				console.log(e);
+				/* eslint-enable no-alert, no-console */
 			},
 			onSave() {
 				localStorage.setItem('editor-json', JSON.stringify(this.json));
