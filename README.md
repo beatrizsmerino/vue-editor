@@ -1,3 +1,10 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/beatrizsmerino/vue-editor)
+![GitHub dependabot](https://img.shields.io/badge/dependabot-enabled-025e8c?logo=Dependabot)  
+![GitHub issues](https://img.shields.io/github/issues/beatrizsmerino/vue-editor)
+![GitHub forks](https://img.shields.io/github/forks/beatrizsmerino/vue-editor)
+![GitHub stars](https://img.shields.io/github/stars/beatrizsmerino/vue-editor)
+![GitHub watchers](https://img.shields.io/github/watchers/beatrizsmerino/vue-editor)
+
 # Vue editor
 
 ![Vue editor](./README/images/vue-editor.jpg)
