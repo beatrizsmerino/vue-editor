@@ -361,7 +361,7 @@
 					}
 				}
 
-				::v-deep(.json-save-btn) {
+				:deep(.json-save-btn) {
 					background-color: $color-brand-2;
 					color: $color-white;
 
