@@ -16,7 +16,7 @@
 	},
 	"dependencies": {
 		"chalk": "^4.1.2",
-		"core-js": "^3.25.0",
+		"core-js": "^3.25.5",
 		"execa": "^5.1.1",
 		"node-emoji": "^1.11.0",
 		"svg-symbol-sprite-loader": "^4.0.0",
