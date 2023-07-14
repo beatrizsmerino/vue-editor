@@ -157,12 +157,11 @@
 
 						&:hover {
 							border-color: mix($color-black, $color-white, 30%);
-							background-color:
-								mix(
-									$color-black,
-									$color-white,
-									30%
-								);
+							background-color: mix(
+								$color-black,
+								$color-white,
+								30%
+							);
 							color: $color-white;
 						}
 					}
@@ -174,23 +173,21 @@
 
 						&:hover {
 							border-color: mix($color-black, $color-white, 30%);
-							background-color:
-								mix(
-									$color-black,
-									$color-white,
-									30%
-								);
+							background-color: mix(
+								$color-black,
+								$color-white,
+								30%
+							);
 						}
 					}
 				}
 
 				:deep(.jsoneditor) {
-					border-color:
-						mix(
-							$color-black,
-							$color-white,
-							10%
-						) !important;
+					border-color: mix(
+						$color-black,
+						$color-white,
+						10%
+					) !important;
 				}
 
 				:deep(.jsoneditor-menu) {
@@ -218,12 +215,11 @@
 							background-color: $color-white !important;
 
 							.jsoneditor-selected {
-								background-color:
-									mix(
-										$color-black,
-										$color-white,
-										10%
-									) !important;
+								background-color: mix(
+									$color-black,
+									$color-white,
+									10%
+								) !important;
 								color: $color-carbon !important;
 							}
 						}
