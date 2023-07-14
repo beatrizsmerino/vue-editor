@@ -91,6 +91,7 @@ module.exports = {
 				]
 			}
 		],
+		'import-notation': null,
 		'keyframe-declaration-no-important': true,
 		'length-zero-no-unit': true,
 		'max-nesting-depth': null,
