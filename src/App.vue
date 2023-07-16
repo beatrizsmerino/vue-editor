@@ -52,10 +52,10 @@
 
 	// BASE
 	//----------------------------------------------------------------------
-	@import './assets/scss/base/base-reset';
-	@import './assets/scss/base/base-global';
+	@import "./assets/scss/base/base-reset";
+	@import "./assets/scss/base/base-global";
 
 	// COMPONENTS
 	//----------------------------------------------------------------------
-	@import './assets/scss/components/components-page';
+	@import "./assets/scss/components/components-page";
 </style>
