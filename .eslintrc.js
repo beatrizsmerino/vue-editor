@@ -27,7 +27,10 @@ module.exports = {
 				minItems: 1
 			}
 		],
-		'array-bracket-spacing': 2,
+		'array-bracket-spacing': [
+			2,
+			'always'
+		],
 		'array-callback-return': 1,
 		'arrow-body-style': [
 			1,
@@ -36,6 +39,7 @@ module.exports = {
 		'array-element-newline': [
 			2,
 			{
+				multiline: true,
 				minItems: 1
 			}
 		],
@@ -44,8 +48,9 @@ module.exports = {
 		'block-scoped-var': 2,
 		'block-spacing': 2,
 		'brace-style': 2,
+		'callback-return': 2,
 		'camelcase': [
-			1,
+			2,
 			{
 				properties: 'always',
 				ignoreDestructuring: true,
@@ -56,19 +61,18 @@ module.exports = {
 		'class-methods-use-this': 2,
 		'comma-dangle': [
 			2,
-			{
-				arrays: 'never',
-				objects: 'never',
-				imports: 'never',
-				exports: 'never',
-				functions: 'never'
-			}
+			'always-multiline'
 		],
 		'comma-spacing': 2,
 		'comma-style': 2,
-		'complexity': 0,
+		'complexity': [
+			2,
+			{
+				max: 4
+			},
+		],
 		'computed-property-spacing': 2,
-		'consistent-return': 1,
+		'consistent-return': 2,
 		'consistent-this': 1,
 		'curly': 2,
 		'default-case': 2,
@@ -89,7 +93,7 @@ module.exports = {
 		'generator-star-spacing': 0,
 		'global-require': 0,
 		'grouped-accessor-pairs': 2,
-		'guard-for-in': 1,
+		'guard-for-in': 2,
 		'handle-callback-err': 2,
 		'id-blacklist': 2,
 		'id-length': [
@@ -101,7 +105,7 @@ module.exports = {
 		'id-match': 2,
 		'implicit-arrow-linebreak': 2,
 		'import/no-named-as-default': 0,
-		'init-declarations': 1,
+		'init-declarations': 2,
 		'indent': [
 			2,
 			'tab'
@@ -126,7 +130,7 @@ module.exports = {
 		'lines-between-class-members': 2,
 		'max-classes-per-file': 1,
 		'max-depth': 1,
-		'max-length': 0,
+		'max-len': 0,
 		'max-lines': [
 			1,
 			{
@@ -143,7 +147,12 @@ module.exports = {
 		],
 		'max-nested-callbacks': 2,
 		'max-params': 2,
-		'max-statements': 0,
+		'max-statements': [
+			1,
+			{
+				'max': 10,
+			},
+		],
 		'max-statements-per-line': [
 			2,
 			{
@@ -293,16 +302,9 @@ module.exports = {
 		'object-curly-newline': [
 			2,
 			{
-				ObjectExpression: 'always',
-				ObjectPattern: {
-					multiline: true
-				},
-				ImportDeclaration: 'never',
-				ExportDeclaration: {
-					multiline: true,
-					minProperties: 3
-				}
-			}
+				multiline: false,
+				consistent: true
+			},
 		],
 		'object-curly-spacing': [
 			2,
@@ -311,7 +313,7 @@ module.exports = {
 		'object-property-newline': [
 			2,
 			{
-				allowAllPropertiesOnSameLine: true
+				allowAllPropertiesOnSameLine: false
 			}
 		],
 		'object-shorthand': 2,
@@ -345,11 +347,11 @@ module.exports = {
 		'prefer-template': 2,
 		'quote-props': [
 			2,
-			'consistent'
+			'always'
 		],
 		'quotes': [
 			2,
-			'single',
+			'double',
 			{
 				avoidEscape: true,
 				allowTemplateLiterals: true
@@ -423,16 +425,32 @@ module.exports = {
 		'vue/max-attributes-per-line': [
 			2,
 			{
-				singleline: 1,
-				multiline: 1
-			}
+				singleline: {
+					max: 1
+				},
+				multiline: {
+					max: 1
+				},
+			},
 		],
 		'vue/multi-word-component-names': 0,
+		'vue/multiline-html-element-content-newline': [
+			2,
+			{
+				ignoreWhenEmpty: true,
+				ignores: [
+					'pre',
+					'textarea',
+				],
+				allowEmptyLines: false,
+			},
+		],
 		'vue/component-name-in-template-casing': [
 			2,
 			'PascalCase'
 		],
 		'vue/order-in-components': 2,
+		'vue/no-reserved-component-names': 0,
 		'vue/no-v-html': 0,
 		'vue/script-indent': [
 			2,
