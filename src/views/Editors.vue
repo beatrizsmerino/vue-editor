@@ -8,12 +8,12 @@
 </template>
 
 <script>
-	import EditorJSON from '@/components/EditorJSON';
+	import EditorJSON from "@/components/EditorJSON";
 
 	export default {
-		name: 'Editors',
-		components: {
-			EditorJSON
-		}
+		"name": "Editors",
+		"components": {
+			EditorJSON,
+		},
 	};
 </script>

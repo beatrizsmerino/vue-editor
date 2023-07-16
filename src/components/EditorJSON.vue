@@ -42,31 +42,31 @@
 </template>
 
 <script>
-	import vueJsonEditor from 'vue-json-editor';
+	import vueJsonEditor from "vue-json-editor";
 
 	export default {
-		name: 'Editor',
-		components: {
-			vueJsonEditor
+		"name": "Editor",
+		"components": {
+			vueJsonEditor,
 		},
 		data() {
 			return {
-				json: {
-					msg: 'demo of jsoneditor'
-				}
+				"json": {
+					"msg": "demo of jsoneditor",
+				},
 			};
 		},
 		created() {
 			this.getPikachu();
 		},
-		methods: {
+		"methods": {
 			onJsonChange(value) {
 				/* eslint-disable no-alert, no-console, no-debugger */
-				console.log('value:', value);
+				console.log("value:", value);
 				/* eslint-enable no-alert, no-console */
 			},
 			getPikachu() {
-				const url = 'https://pokeapi.co/api/v2/pokemon/pikachu';
+				const url = "https://pokeapi.co/api/v2/pokemon/pikachu";
 				fetch(url).
 					then(res => res.json()).
 					then(data => {
@@ -75,19 +75,19 @@
 			},
 			onCopy() {
 				/* eslint-disable no-alert, no-console, no-debugger */
-				alert('Copied JSON to the clipboard');
+				alert("Copied JSON to the clipboard");
 				/* eslint-enable no-alert, no-console */
 			},
 			onError(e) {
 				/* eslint-disable no-alert, no-console, no-debugger */
-				alert('Failed to copy JSON to the clipboard');
+				alert("Failed to copy JSON to the clipboard");
 				console.log(e);
 				/* eslint-enable no-alert, no-console */
 			},
 			onSave() {
-				localStorage.setItem('editor-json', JSON.stringify(this.json));
-			}
-		}
+				localStorage.setItem("editor-json", JSON.stringify(this.json));
+			},
+		},
 	};
 </script>
 
