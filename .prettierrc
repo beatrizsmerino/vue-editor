@@ -1,11 +1,29 @@
 {
 	"arrowParens": "avoid",
+	"bracketSameLine": false,
 	"bracketSpacing": true,
 	"embeddedLanguageFormatting": "auto",
 	"htmlWhitespaceSensitivity": "ignore",
 	"insertPragma": false,
-	"bracketSameLine": false,
 	"jsxSingleQuote": false,
+	"overrides": [
+		{
+			"files": [
+				".prettierrc"
+			],
+			"options": {
+				"parser": "json"
+			}
+		},
+		{
+			"files": [
+				"*.json"
+			],
+			"options": {
+				"printWidth": 0
+			}
+		}
+	],
 	"printWidth": 80,
 	"proseWrap": "always",
 	"quoteProps": "preserve",
@@ -16,15 +34,5 @@
 	"tabWidth": 4,
 	"trailingComma": "all",
 	"useTabs": true,
-	"vueIndentScriptAndStyle": true,
-	"overrides": [
-		{
-			"files": [".prettierrc"],
-			"options": { "parser": "json" }
-		},
-		{
-			"files": ["*.json"],
-			"options": { "printWidth": 0 }
-		}
-	]
+	"vueIndentScriptAndStyle": true
 }

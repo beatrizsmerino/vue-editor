@@ -10,30 +10,30 @@
 </template>
 
 <script>
-	import PageNav from '@/components/PageNav';
+	import PageNav from "@/components/PageNav";
 	export default {
-		name: 'App',
-		components: {
-			PageNav
+		"name": "App",
+		"components": {
+			PageNav,
 		},
-		watch: {
-			$route: {
+		"watch": {
+			"$route": {
 				handler(to, from) {
-					const html = document.getElementsByTagName('html')[0];
-					const body = document.getElementsByTagName('body')[0];
+					const html = document.getElementsByTagName("html")[0];
+					const body = document.getElementsByTagName("body")[0];
 
-					if (typeof from !== 'undefined') {
+					if (typeof from !== "undefined") {
 						html.classList.remove(
-							'page',
-							`page-${from.name.toLowerCase()}`
+							"page",
+							`page-${from.name.toLowerCase()}`,
 						);
 					}
-					html.classList.add('page', `page-${to.name.toLowerCase()}`);
-					body.classList.add('page__body');
+					html.classList.add("page", `page-${to.name.toLowerCase()}`);
+					body.classList.add("page__body");
 				},
-				immediate: true
-			}
-		}
+				"immediate": true,
+			},
+		},
 	};
 </script>
 
