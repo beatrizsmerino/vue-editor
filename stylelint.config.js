@@ -1,16 +1,16 @@
+// https://stylelint.io/user-guide/configuration
+
 module.exports = {
 	"customSyntax": "postcss-html",
 	"extends": [
 		"stylelint-config-standard",
+		"stylelint-config-recommended-vue",
 		"stylelint-config-sass-guidelines",
 		"stylelint-config-property-sort-order-smacss",
 	],
 	"plugins": [
 		"stylelint-scss",
 	],
-
-	// add your custom config here
-	// https://stylelint.io/user-guide/configuration
 	"rules": {
 		"at-rule-empty-line-before": [
 			"always",
@@ -117,9 +117,19 @@ module.exports = {
 			},
 		],
 		"scss/at-rule-no-unknown": true,
-
-		// 'scss/no-global-function-names': null,
-		"selector-class-pattern": null,
+		"scss/no-global-function-names": null,
+		"selector-class-pattern": [
+			"^([a-z]+[a-z0-9]*)(-[a-z0-9]+)*(__[a-z]+[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z]+[a-z0-9]+(-[a-z0-9]+)*)?$",
+			{
+				"resolveNestedSelectors": true,
+			},
+		],
+		"selector-id-pattern": [
+			"error",
+			{
+				"format": "camelCase",
+			},
+		],
 		"selector-no-qualifying-type": [
 			true,
 			{
