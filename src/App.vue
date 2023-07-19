@@ -23,10 +23,7 @@
 					const body = document.getElementsByTagName("body")[0];
 
 					if (typeof from !== "undefined") {
-						html.classList.remove(
-							"page",
-							`page-${from.name.toLowerCase()}`,
-						);
+						html.classList.remove("page", `page-${from.name.toLowerCase()}`);
 					}
 					html.classList.add("page", `page-${to.name.toLowerCase()}`);
 					body.classList.add("page__body");
