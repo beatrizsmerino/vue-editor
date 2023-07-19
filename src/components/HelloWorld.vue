@@ -5,8 +5,7 @@
 		</h2>
 		<article class="page__article">
 			<p>
-				For a guide and recipes on how to configure / customize this
-				project,
+				For a guide and recipes on how to configure / customize this project,
 				<br >
 				check out the
 				<a

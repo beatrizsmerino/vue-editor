@@ -151,76 +151,36 @@
 			&--light {
 				.editor-json {
 					&__button-copy {
-						border-color: color.mix(
-							$color-black,
-							$color-white,
-							20%
-						);
+						border-color: color.mix($color-black, $color-white, 20%);
 						background-color: $color-white;
 						color: color.mix($color-black, $color-white, 20%);
 
 						&:hover {
-							border-color: color.mix(
-								$color-black,
-								$color-white,
-								30%
-							);
-							background-color: color.mix(
-								$color-black,
-								$color-white,
-								30%
-							);
+							border-color: color.mix($color-black, $color-white, 30%);
+							background-color: color.mix($color-black, $color-white, 30%);
 							color: $color-white;
 						}
 					}
 
 					&__button-save {
-						border-color: color.mix(
-							$color-black,
-							$color-white,
-							20%
-						);
-						background-color: color.mix(
-							$color-black,
-							$color-white,
-							20%
-						);
+						border-color: color.mix($color-black, $color-white, 20%);
+						background-color: color.mix($color-black, $color-white, 20%);
 						color: $color-white;
 
 						&:hover {
-							border-color: color.mix(
-								$color-black,
-								$color-white,
-								30%
-							);
-							background-color: color.mix(
-								$color-black,
-								$color-white,
-								30%
-							);
+							border-color: color.mix($color-black, $color-white, 30%);
+							background-color: color.mix($color-black, $color-white, 30%);
 						}
 					}
 				}
 
 				:deep(.jsoneditor) {
-					border-color: color.mix(
-						$color-black,
-						$color-white,
-						10%
-					) !important;
+					border-color: color.mix($color-black, $color-white, 10%) !important;
 				}
 
 				:deep(.jsoneditor-menu) {
-					border-bottom-color: color.mix(
-						$color-black,
-						$color-white,
-						10%
-					);
-					background-color: color.mix(
-						$color-black,
-						$color-white,
-						10%
-					);
+					border-bottom-color: color.mix($color-black, $color-white, 10%);
+					background-color: color.mix($color-black, $color-white, 10%);
 
 					button {
 						filter: brightness(0.4);
@@ -243,11 +203,7 @@
 							background-color: $color-white !important;
 
 							.jsoneditor-selected {
-								background-color: color.mix(
-									$color-black,
-									$color-white,
-									10%
-								) !important;
+								background-color: color.mix($color-black, $color-white, 10%) !important;
 								color: $color-carbon !important;
 							}
 						}
@@ -259,11 +215,7 @@
 					color: $color-white;
 
 					&:hover {
-						background-color: color.mix(
-							$color-black,
-							$color-white,
-							10%
-						);
+						background-color: color.mix($color-black, $color-white, 10%);
 					}
 				}
 			}
