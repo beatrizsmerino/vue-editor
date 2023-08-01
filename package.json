@@ -2,6 +2,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"name": "vue-editor",
+	"description": "Editor online of code made with Vue.",
 	"author": "beatrizsmerino@gmail.com",
 	"license": "ISC",
 	"main": "index.js",
