@@ -42,31 +42,31 @@
 </template>
 
 <script>
-	import vueJsonEditor from 'vue-json-editor';
+	import vueJsonEditor from "vue-json-editor";
 
 	export default {
-		name: 'Editor',
-		components: {
-			vueJsonEditor
+		"name": "Editor",
+		"components": {
+			vueJsonEditor,
 		},
 		data() {
 			return {
-				json: {
-					msg: 'demo of jsoneditor'
-				}
+				"json": {
+					"msg": "demo of jsoneditor",
+				},
 			};
 		},
 		created() {
 			this.getPikachu();
 		},
-		methods: {
+		"methods": {
 			onJsonChange(value) {
 				/* eslint-disable no-alert, no-console, no-debugger */
-				console.log('value:', value);
+				console.log("value:", value);
 				/* eslint-enable no-alert, no-console */
 			},
 			getPikachu() {
-				const url = 'https://pokeapi.co/api/v2/pokemon/pikachu';
+				const url = "https://pokeapi.co/api/v2/pokemon/pikachu";
 				fetch(url).
 					then(res => res.json()).
 					then(data => {
@@ -75,19 +75,19 @@
 			},
 			onCopy() {
 				/* eslint-disable no-alert, no-console, no-debugger */
-				alert('Copied JSON to the clipboard');
+				alert("Copied JSON to the clipboard");
 				/* eslint-enable no-alert, no-console */
 			},
 			onError(e) {
 				/* eslint-disable no-alert, no-console, no-debugger */
-				alert('Failed to copy JSON to the clipboard');
+				alert("Failed to copy JSON to the clipboard");
 				console.log(e);
 				/* eslint-enable no-alert, no-console */
 			},
 			onSave() {
-				localStorage.setItem('editor-json', JSON.stringify(this.json));
-			}
-		}
+				localStorage.setItem("editor-json", JSON.stringify(this.json));
+			},
+		},
 	};
 </script>
 
@@ -151,51 +151,36 @@
 			&--light {
 				.editor-json {
 					&__button-copy {
-						border-color: mix($color-black, $color-white, 20%);
+						border-color: color.mix($color-black, $color-white, 20%);
 						background-color: $color-white;
-						color: mix($color-black, $color-white, 20%);
+						color: color.mix($color-black, $color-white, 20%);
 
 						&:hover {
-							border-color: mix($color-black, $color-white, 30%);
-							background-color:
-								mix(
-									$color-black,
-									$color-white,
-									30%
-								);
+							border-color: color.mix($color-black, $color-white, 30%);
+							background-color: color.mix($color-black, $color-white, 30%);
 							color: $color-white;
 						}
 					}
 
 					&__button-save {
-						border-color: mix($color-black, $color-white, 20%);
-						background-color: mix($color-black, $color-white, 20%);
+						border-color: color.mix($color-black, $color-white, 20%);
+						background-color: color.mix($color-black, $color-white, 20%);
 						color: $color-white;
 
 						&:hover {
-							border-color: mix($color-black, $color-white, 30%);
-							background-color:
-								mix(
-									$color-black,
-									$color-white,
-									30%
-								);
+							border-color: color.mix($color-black, $color-white, 30%);
+							background-color: color.mix($color-black, $color-white, 30%);
 						}
 					}
 				}
 
 				:deep(.jsoneditor) {
-					border-color:
-						mix(
-							$color-black,
-							$color-white,
-							10%
-						) !important;
+					border-color: color.mix($color-black, $color-white, 10%) !important;
 				}
 
 				:deep(.jsoneditor-menu) {
-					border-bottom-color: mix($color-black, $color-white, 10%);
-					background-color: mix($color-black, $color-white, 10%);
+					border-bottom-color: color.mix($color-black, $color-white, 10%);
+					background-color: color.mix($color-black, $color-white, 10%);
 
 					button {
 						filter: brightness(0.4);
@@ -218,12 +203,7 @@
 							background-color: $color-white !important;
 
 							.jsoneditor-selected {
-								background-color:
-									mix(
-										$color-black,
-										$color-white,
-										10%
-									) !important;
+								background-color: color.mix($color-black, $color-white, 10%) !important;
 								color: $color-carbon !important;
 							}
 						}
@@ -235,7 +215,7 @@
 					color: $color-white;
 
 					&:hover {
-						background-color: mix($color-black, $color-white, 10%);
+						background-color: color.mix($color-black, $color-white, 10%);
 					}
 				}
 			}
