@@ -26,7 +26,7 @@ Reference: [Using SVG symbol sprites with Vue](https://stefan-dietz.eu/vue-svg-s
 
 ## Commands
 
-### Project setup
+### Install dependencies
 
 ```bash
 npm install
