@@ -9,7 +9,7 @@
 
 ![Vue editor](./README/images/vue-editor.jpg)
 
-## Description
+## 🎯 Description
 
 ✨&nbsp; This repo was created to demonstrate that `vue-json-editor` and `svg-symbol-sprite-loader` packages can coexist together.
 
@@ -17,14 +17,14 @@
 
 Maybe someone will find it helpful too 😁
 
-## Developed with
+## 🏗️ Developed with
 
 - The [`vue-json-editor`](https://www.npmjs.com/package/vue-json-editor) package is a vue component that can be used to create a json editor.
 
 - The [`svg-symbol-sprite-loader`](https://www.npmjs.com/package/svg-symbol-sprite-loader) package is a webpack loader and plugin for creating SVG sprites.  
 Reference: [Using SVG symbol sprites with Vue](https://stefan-dietz.eu/vue-svg-symbol-sprites.html)
 
-## Commands
+## 🚀 Commands
 
 ### Install dependencies
 
