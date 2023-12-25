@@ -17,7 +17,7 @@
 
 Maybe someone will find it helpful too 😁
 
-## NPM packages
+## Developed with
 
 - The [`vue-json-editor`](https://www.npmjs.com/package/vue-json-editor) package is a vue component that can be used to create a json editor.
 
