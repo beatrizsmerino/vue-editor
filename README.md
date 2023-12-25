@@ -24,7 +24,7 @@ Maybe someone will find it helpful too 😁
 - The [`svg-symbol-sprite-loader`](https://www.npmjs.com/package/svg-symbol-sprite-loader) package is a webpack loader and plugin for creating SVG sprites.  
 Reference: [Using SVG symbol sprites with Vue](https://stefan-dietz.eu/vue-svg-symbol-sprites.html)
 
-## NPM scripts
+## Commands
 
 ### Project setup
 
