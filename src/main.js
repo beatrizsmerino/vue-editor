@@ -4,7 +4,7 @@ import router from "./router";
 import store from "./store";
 
 import "@/assets/images/icons/icons-import.js";
-import Icon from "@/components/Icon";
+import Icon from "@/components/Icon.vue";
 Vue.component("Icon", Icon);
 
 import VueClipboard from "vue-clipboard2";
