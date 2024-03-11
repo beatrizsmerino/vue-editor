@@ -7,7 +7,13 @@ const routes = [
 	{
 		"path": "/",
 		"name": "Home",
-		"component": () => import("../views/Home.vue"),
+		// eslint-disable-next-line function-paren-newline
+		"component": () => import(
+
+			/* webpackChunkName: "home" */
+			"../views/Home.vue"
+		// eslint-disable-next-line function-paren-newline
+		),
 	},
 	{
 		"path": "/home",
