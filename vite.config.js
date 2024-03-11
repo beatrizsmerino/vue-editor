@@ -1,4 +1,4 @@
-import path from "path";
+import { resolve, dirname } from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue2";
 
@@ -9,7 +9,7 @@ export default defineConfig({
 	],
 	"resolve": {
 		"alias": {
-			"@": path.resolve(path.dirname(new URL(import.meta.url).pathname), "./src"),
+			"@": resolve(dirname(new URL(import.meta.url).pathname), "./src"),
 		},
 	},
 });
