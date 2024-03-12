@@ -13,7 +13,7 @@
 		"preinstall": "npm run install:clean && npm run dependencies:fix",
 		"postinstall": "npm run lint",
 		"prepare": "husky install",
-		"dev": "vite ",
+		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prettier:fix": "prettier --write \"./**/*.{vue,js,mjs,json}\"",
