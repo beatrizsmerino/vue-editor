@@ -175,8 +175,8 @@ textarea {
 }
 
 input {
-	&[type='submit'],
-	&[type='reset'] {
+	&[type="submit"],
+	&[type="reset"] {
 		cursor: pointer;
 	}
 }
