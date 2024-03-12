@@ -5,6 +5,9 @@ import vue from "@vitejs/plugin-vue2";
 // https://vitejs.dev/config/
 export default defineConfig({
 	"base": process.env.NODE_ENV === "production" ? "/vue-editor/" : "/",
+	"server": {
+		"port": 3000,
+	},
 	"plugins": [
 		vue(),
 	],
