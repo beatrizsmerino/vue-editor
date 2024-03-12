@@ -3,6 +3,9 @@ module.exports = {
 		"browser": true,
 		"es2024": true,
 	},
+	"globals": {
+		"process": "readonly",
+	},
 	"extends": [
 		"prettier",
 		"eslint:recommended",
