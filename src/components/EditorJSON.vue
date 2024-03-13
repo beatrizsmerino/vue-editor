@@ -4,7 +4,7 @@
 			Vue JSON editor
 		</h2>
 		<div class="editor-json__content">
-			<vue-json-editor
+			<VueJsonEditor
 				v-model="json"
 				:show-btns="false"
 				:expanded-on-start="true"
@@ -42,12 +42,10 @@
 </template>
 
 <script>
-	import vueJsonEditor from "vue-json-editor";
-
 	export default {
 		"name": "Editor",
 		"components": {
-			vueJsonEditor,
+			"VueJsonEditor": () => import("vue-json-editor"),
 		},
 		data() {
 			return {
