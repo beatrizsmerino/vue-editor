@@ -42,12 +42,10 @@
 </template>
 
 <script>
-	import VueJsonEditor from "vue-json-editor";
-
 	export default {
 		"name": "Editor",
 		"components": {
-			VueJsonEditor,
+			"VueJsonEditor": () => import("vue-json-editor"),
 		},
 		data() {
 			return {
