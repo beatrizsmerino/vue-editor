@@ -1,8 +1,6 @@
 import { fileURLToPath, URL } from "url";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue2";
-import eslint from "vite-plugin-eslint";
-import stylelint from "vite-plugin-stylelint";
 import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 
 // https://vitejs.dev/config/
@@ -13,12 +11,6 @@ export default defineConfig({
 	},
 	"plugins": [
 		vue(),
-		eslint({
-			"fix": true,
-		}),
-		stylelint({
-			"fix": true,
-		}),
 		createSvgIconsPlugin({
 			"iconDirs": [
 				fileURLToPath(new URL("src/assets/images/icons/svg", import.meta.url)),
