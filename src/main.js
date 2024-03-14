@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import "@/assets/images/icons/icons-import.js";
+import "virtual:svg-icons-register";
 import Icon from "@/components/Icon.vue";
 Vue.component("Icon", Icon);
 
