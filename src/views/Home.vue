@@ -1,7 +1,7 @@
 <template>
 	<div class="page__inner page__container">
 		<Icon
-			name="logoVue"
+			name="logo-vue"
 			aria-label="Vue logo"
 			title="Vue logo"
 		/>
