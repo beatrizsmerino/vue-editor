@@ -43,7 +43,7 @@
 
 <script>
 	export default {
-		"name": "Editor",
+		"name": "EditorJSON",
 		"components": {
 			"VueJsonEditor": () => import("vue-json-editor"),
 		},
