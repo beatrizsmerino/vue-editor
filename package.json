@@ -54,9 +54,7 @@
 		"stylelint-config-sass-guidelines": "^11.0.0",
 		"stylelint-config-standard": "^36.0.0",
 		"stylelint-scss": "^6.2.1",
-		"vite": "^5.1.6",
-		"vite-plugin-eslint": "^1.8.1",
-		"vite-plugin-stylelint": "^5.3.1"
+		"vite": "^5.1.6"
 	},
 	"resolutions": {},
 	"engines": {
