@@ -102,6 +102,11 @@
 				display: flex;
 				flex: 1;
 				height: 50rem;
+
+				a,
+				span {
+					display: initial;
+				}
 			}
 		}
 
