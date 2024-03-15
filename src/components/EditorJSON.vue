@@ -4,11 +4,9 @@
 			Vue JSON editor
 		</h2>
 		<div class="editor-json__content">
-			<VueJsonEditor
-				v-model="json"
-				:show-btns="false"
-				:expanded-on-start="true"
-				@json-change="onJsonChange"
+			<JsonEditorVue
+				:model-value="json"
+				:on-change="onJsonChange"
 			/>
 			<div class="editor-json__actions">
 				<button
@@ -42,10 +40,12 @@
 </template>
 
 <script>
+	import JsonEditorVue from "json-editor-vue";
+
 	export default {
 		"name": "EditorJSON",
 		"components": {
-			"VueJsonEditor": () => import("vue-json-editor"),
+			JsonEditorVue,
 		},
 		data() {
 			return {
@@ -120,31 +120,6 @@
 			}
 		}
 
-		:deep(.jsoneditor-vue) {
-			height: 50vh;
-		}
-
-		:deep(.jsoneditor-poweredBy) {
-			display: none;
-		}
-
-		:deep(.jsoneditor-btns) {
-			display: flex;
-			justify-content: flex-end;
-		}
-
-		:deep(.json-save-btn) {
-			padding: 0.5rem 1rem;
-			font-size: 1.2rem;
-		}
-
-		:deep(.jsoneditor-contextmenu),
-		:deep(.jsoneditor-frame) {
-			button {
-				filter: none !important;
-			}
-		}
-
 		&.theme {
 			&--light {
 				.editor-json {
@@ -169,51 +144,6 @@
 							border-color: color.mix($color-black, $color-white, 30%);
 							background-color: color.mix($color-black, $color-white, 30%);
 						}
-					}
-				}
-
-				:deep(.jsoneditor) {
-					border-color: color.mix($color-black, $color-white, 10%) !important;
-				}
-
-				:deep(.jsoneditor-menu) {
-					border-bottom-color: color.mix($color-black, $color-white, 10%);
-					background-color: color.mix($color-black, $color-white, 10%);
-
-					button {
-						filter: brightness(0.4);
-
-						&:disabled {
-							filter: brightness(0.6);
-						}
-					}
-
-					.jsoneditor-modes {
-						button {
-							color: $color-carbon;
-						}
-					}
-				}
-
-				:deep(.jsoneditor-contextmenu) {
-					ul {
-						li {
-							background-color: $color-white !important;
-
-							.jsoneditor-selected {
-								background-color: color.mix($color-black, $color-white, 10%) !important;
-								color: $color-carbon !important;
-							}
-						}
-					}
-				}
-
-				:deep(.json-save-btn) {
-					background-color: $color-carbon;
-					color: $color-white;
-
-					&:hover {
-						background-color: color.mix($color-black, $color-white, 10%);
 					}
 				}
 			}
@@ -243,40 +173,6 @@
 						}
 					}
 				}
-
-				:deep(.jsoneditor) {
-					border-color: $color-brand-1;
-				}
-
-				:deep(.jsoneditor-menu) {
-					border-bottom-color: $color-brand-1;
-					background-color: $color-brand-1;
-
-					button {
-						filter: brightness(0) saturate(100%) invert(100%);
-
-						&:disabled {
-							filter: brightness(0) saturate(100%) invert(100%);
-						}
-					}
-				}
-
-				:deep(.jsoneditor-contextmenu) {
-					ul {
-						li {
-							background-color: $color-white !important;
-
-							button {
-								color: $color-carbon !important;
-
-								&.jsoneditor-selected {
-									background-color: $color-brand-1 !important;
-									color: $color-white !important;
-								}
-							}
-						}
-					}
-				}
 			}
 
 			&--brand-2 {
@@ -302,49 +198,6 @@
 							border-color: $color-brand-1;
 							background-color: $color-brand-1;
 						}
-					}
-				}
-
-				:deep(.jsoneditor) {
-					border-color: $color-brand-2;
-				}
-
-				:deep(.jsoneditor-menu) {
-					border-bottom-color: $color-brand-2;
-					background-color: $color-brand-2;
-
-					button {
-						filter: brightness(0) saturate(100%) invert(100%);
-
-						&:disabled {
-							filter: brightness(0) saturate(100%) invert(100%);
-						}
-					}
-				}
-
-				:deep(.jsoneditor-contextmenu) {
-					ul {
-						li {
-							background-color: $color-white !important;
-
-							button {
-								color: $color-carbon !important;
-
-								&.jsoneditor-selected {
-									background-color: $color-brand-2 !important;
-									color: $color-white !important;
-								}
-							}
-						}
-					}
-				}
-
-				:deep(.json-save-btn) {
-					background-color: $color-brand-2;
-					color: $color-white;
-
-					&:hover {
-						background-color: $color-brand-1;
 					}
 				}
 			}
