@@ -6,7 +6,7 @@
 		<div class="editor-json__content">
 			<JsonEditorVue
 				:model-value="json"
-				class="jse-theme-dark"
+				class="json-editor-vue jse-theme-dark"
 				:on-change="onJsonChange"
 			/>
 			<div class="editor-json__actions">
@@ -93,6 +93,14 @@
 
 <style lang="scss" scoped>
 	.editor-json {
+		&__content {
+			:deep(.json-editor-vue) {
+				display: flex;
+				flex: 1;
+				height: 50rem;
+			}
+		}
+
 		&__actions {
 			display: flex;
 			justify-content: flex-end;
