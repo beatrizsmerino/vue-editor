@@ -98,6 +98,19 @@
 <style lang="scss" scoped>
 	.editor-json {
 		&__content {
+			:deep(.jse-theme-dark) {
+				--jse-theme-color: #{$color-brand-2};
+				--jse-theme-color-highlight: #{$color-brand-1};
+			}
+
+			:deep(.jse-modal .svelte-select) {
+				--item-is-active-bg: #{$color-brand-1};
+			}
+
+			:deep(.jse-modal .svelte-select.focused) {
+				border-color: #{$color-brand-1} !important;
+			}
+
 			:deep(.json-editor-vue) {
 				display: flex;
 				flex: 1;
