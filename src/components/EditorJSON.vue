@@ -7,6 +7,10 @@
 			<JsonEditorVue
 				:model-value="json"
 				class="json-editor-vue jse-theme-dark"
+				mode="text"
+				:ask-to-format="true"
+				:read-only="false"
+				:indentation="4"
 				:on-change="onJsonChange"
 			/>
 			<div class="editor-json__actions">
