@@ -6,6 +6,7 @@
 		<div class="editor-json__content">
 			<JsonEditorVue
 				:model-value="json"
+				class="jse-theme-dark"
 				:on-change="onJsonChange"
 			/>
 			<div class="editor-json__actions">
@@ -40,6 +41,7 @@
 </template>
 
 <script>
+	import "vanilla-jsoneditor/themes/jse-theme-dark.css";
 	import JsonEditorVue from "json-editor-vue";
 
 	export default {
