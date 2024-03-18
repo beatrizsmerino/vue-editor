@@ -16,8 +16,8 @@
 			<div class="editor-json__actions">
 				<button
 					v-clipboard:copy="JSON.stringify(json)"
-					v-clipboard:success="onCopy"
-					v-clipboard:error="onError"
+					v-clipboard:success="onCopySuccess"
+					v-clipboard:error="onCopyError"
 					type="button"
 					class="editor-json__button editor-json__button-copy"
 				>
@@ -77,12 +77,12 @@
 						this.json = data;
 					});
 			},
-			onCopy() {
+			onCopySuccess() {
 				/* eslint-disable no-alert, no-console, no-debugger */
 				alert("Copied JSON to the clipboard");
 				/* eslint-enable no-alert, no-console */
 			},
-			onError(e) {
+			onCopyError(e) {
 				/* eslint-disable no-alert, no-console, no-debugger */
 				alert("Failed to copy JSON to the clipboard");
 				console.log(e);
