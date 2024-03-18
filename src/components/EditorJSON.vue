@@ -15,7 +15,7 @@
 			/>
 			<div class="editor-json__actions">
 				<button
-					v-clipboard:copy="JSON.stringify(json)"
+					v-clipboard:copy="onCopy"
 					v-clipboard:success="onCopySuccess"
 					v-clipboard:error="onCopyError"
 					type="button"
@@ -76,6 +76,9 @@
 					then(data => {
 						this.json = data;
 					});
+			},
+			onCopy() {
+				JSON.stringify(this.json);
 			},
 			onCopySuccess() {
 				/* eslint-disable no-alert, no-console, no-debugger */
