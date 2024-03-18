@@ -87,11 +87,9 @@
 				JSON.stringify(this.json);
 			},
 			copyDataSuccess() {
-				// eslint-disable-next-line no-alert
 				alert("Copied JSON to the clipboard");
 			},
 			copyDataError(error) {
-				// eslint-disable-next-line no-alert
 				alert("Failed to copy JSON to the clipboard");
 				console.log(error);
 			},
