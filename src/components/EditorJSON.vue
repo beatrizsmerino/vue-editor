@@ -64,11 +64,6 @@
 			this.getPikachu();
 		},
 		"methods": {
-			onJsonChange(value) {
-				/* eslint-disable no-alert, no-console, no-debugger */
-				console.log("value:", value);
-				/* eslint-enable no-alert, no-console */
-			},
 			getPikachu() {
 				const url = "https://pokeapi.co/api/v2/pokemon/pikachu";
 				fetch(url).
@@ -76,6 +71,14 @@
 					then(data => {
 						this.json = data;
 					});
+			},
+			onJsonChange(value) {
+				/* eslint-disable no-alert, no-console, no-debugger */
+				console.log("value:", value);
+				/* eslint-enable no-alert, no-console */
+			},
+			onSave() {
+				localStorage.setItem("editor-json", JSON.stringify(this.json));
 			},
 			onCopy() {
 				JSON.stringify(this.json);
@@ -90,9 +93,6 @@
 				alert("Failed to copy JSON to the clipboard");
 				console.log(e);
 				/* eslint-enable no-alert, no-console */
-			},
-			onSave() {
-				localStorage.setItem("editor-json", JSON.stringify(this.json));
 			},
 		},
 	};
