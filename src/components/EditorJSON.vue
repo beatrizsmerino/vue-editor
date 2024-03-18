@@ -61,12 +61,11 @@
 			};
 		},
 		created() {
-			this.getPikachu();
+			this.getData("https://pokeapi.co/api/v2/pokemon/pikachu");
 		},
 		"methods": {
-			getPikachu() {
-				const url = "https://pokeapi.co/api/v2/pokemon/pikachu";
-				fetch(url).
+			getData(apiUrl) {
+				fetch(apiUrl).
 					then(res => res.json()).
 					then(data => {
 						this.json = data;
