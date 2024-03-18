@@ -88,10 +88,10 @@
 				alert("Copied JSON to the clipboard");
 				/* eslint-enable no-alert, no-console */
 			},
-			onCopyError(e) {
+			onCopyError(error) {
 				/* eslint-disable no-alert, no-console, no-debugger */
 				alert("Failed to copy JSON to the clipboard");
-				console.log(e);
+				console.log(error);
 				/* eslint-enable no-alert, no-console */
 			},
 		},
