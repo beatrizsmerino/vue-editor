@@ -11,13 +11,13 @@
 				:ask-to-format="true"
 				:read-only="false"
 				:indentation="4"
-				:on-change="onJsonChange"
+				:on-change="updateData"
 			/>
 			<div class="editor-json__actions">
 				<button
-					v-clipboard:copy="onCopy"
-					v-clipboard:success="onCopySuccess"
-					v-clipboard:error="onCopyError"
+					v-clipboard:copy="copyData"
+					v-clipboard:success="copyDataSuccess"
+					v-clipboard:error="copyDataError"
 					type="button"
 					class="editor-json__button editor-json__button-copy"
 				>
@@ -30,7 +30,7 @@
 				</button>
 				<button
 					class="editor-json__button editor-json__button-save"
-					@click="onSave"
+					@click="saveData"
 				>
 					<Icon
 						name="save"
@@ -77,23 +77,23 @@
 						this.json = data;
 					});
 			},
-			onJsonChange(value) {
+			updateData(value) {
 				/* eslint-disable no-alert, no-console, no-debugger */
 				console.log("value:", value);
 				/* eslint-enable no-alert, no-console */
 			},
-			onSave() {
+			saveData() {
 				localStorage.setItem("editor-json", JSON.stringify(this.json));
 			},
-			onCopy() {
+			copyData() {
 				JSON.stringify(this.json);
 			},
-			onCopySuccess() {
+			copyDataSuccess() {
 				/* eslint-disable no-alert, no-console, no-debugger */
 				alert("Copied JSON to the clipboard");
 				/* eslint-enable no-alert, no-console */
 			},
-			onCopyError(error) {
+			copyDataError(error) {
 				/* eslint-disable no-alert, no-console, no-debugger */
 				alert("Failed to copy JSON to the clipboard");
 				console.log(error);
