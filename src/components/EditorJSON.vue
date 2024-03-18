@@ -53,6 +53,12 @@
 		"components": {
 			JsonEditorVue,
 		},
+		"props": {
+			"apiUrl": {
+				"type": String,
+				"required": true,
+			},
+		},
 		data() {
 			return {
 				"json": {
@@ -61,7 +67,7 @@
 			};
 		},
 		created() {
-			this.getData("https://pokeapi.co/api/v2/pokemon/pikachu");
+			this.getData(this.apiUrl);
 		},
 		"methods": {
 			getData(apiUrl) {
