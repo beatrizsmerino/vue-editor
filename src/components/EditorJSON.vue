@@ -78,9 +78,7 @@
 					});
 			},
 			updateData(value) {
-				/* eslint-disable no-alert, no-console, no-debugger */
 				console.log("value:", value);
-				/* eslint-enable no-alert, no-console */
 			},
 			saveData() {
 				localStorage.setItem("editor-json", JSON.stringify(this.json));
@@ -89,15 +87,13 @@
 				JSON.stringify(this.json);
 			},
 			copyDataSuccess() {
-				/* eslint-disable no-alert, no-console, no-debugger */
+				// eslint-disable-next-line no-alert
 				alert("Copied JSON to the clipboard");
-				/* eslint-enable no-alert, no-console */
 			},
 			copyDataError(error) {
-				/* eslint-disable no-alert, no-console, no-debugger */
+				// eslint-disable-next-line no-alert
 				alert("Failed to copy JSON to the clipboard");
 				console.log(error);
-				/* eslint-enable no-alert, no-console */
 			},
 		},
 	};
