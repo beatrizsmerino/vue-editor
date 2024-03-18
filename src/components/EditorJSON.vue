@@ -1,7 +1,7 @@
 <template>
 	<div class="editor-json theme--brand-2">
 		<h2 class="page__subtitle">
-			Vue JSON editor
+			JSON editor
 		</h2>
 		<div class="editor-json__content">
 			<JsonEditorVue
@@ -11,13 +11,13 @@
 				:ask-to-format="true"
 				:read-only="false"
 				:indentation="4"
-				:on-change="onJsonChange"
+				:on-change="updateData"
 			/>
 			<div class="editor-json__actions">
 				<button
-					v-clipboard:copy="JSON.stringify(json)"
-					v-clipboard:success="onCopy"
-					v-clipboard:error="onError"
+					v-clipboard:copy="copyData"
+					v-clipboard:success="copyDataSuccess"
+					v-clipboard:error="copyDataError"
 					type="button"
 					class="editor-json__button editor-json__button-copy"
 				>
@@ -30,7 +30,7 @@
 				</button>
 				<button
 					class="editor-json__button editor-json__button-save"
-					@click="onSave"
+					@click="saveData"
 				>
 					<Icon
 						name="save"
@@ -53,6 +53,12 @@
 		"components": {
 			JsonEditorVue,
 		},
+		"props": {
+			"apiUrl": {
+				"type": String,
+				"required": true,
+			},
+		},
 		data() {
 			return {
 				"json": {
@@ -61,35 +67,31 @@
 			};
 		},
 		created() {
-			this.getPikachu();
+			this.getData(this.apiUrl);
 		},
 		"methods": {
-			onJsonChange(value) {
-				/* eslint-disable no-alert, no-console, no-debugger */
-				console.log("value:", value);
-				/* eslint-enable no-alert, no-console */
-			},
-			getPikachu() {
-				const url = "https://pokeapi.co/api/v2/pokemon/pikachu";
-				fetch(url).
+			getData(apiUrl) {
+				fetch(apiUrl).
 					then(res => res.json()).
 					then(data => {
 						this.json = data;
 					});
 			},
-			onCopy() {
-				/* eslint-disable no-alert, no-console, no-debugger */
-				alert("Copied JSON to the clipboard");
-				/* eslint-enable no-alert, no-console */
+			updateData(value) {
+				console.log("value:", value);
 			},
-			onError(e) {
-				/* eslint-disable no-alert, no-console, no-debugger */
-				alert("Failed to copy JSON to the clipboard");
-				console.log(e);
-				/* eslint-enable no-alert, no-console */
-			},
-			onSave() {
+			saveData() {
 				localStorage.setItem("editor-json", JSON.stringify(this.json));
+			},
+			copyData() {
+				JSON.stringify(this.json);
+			},
+			copyDataSuccess() {
+				alert("Copied JSON to the clipboard");
+			},
+			copyDataError(error) {
+				alert("Failed to copy JSON to the clipboard");
+				console.log(error);
 			},
 		},
 	};

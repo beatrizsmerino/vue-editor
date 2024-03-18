@@ -3,7 +3,7 @@
 		<h1 class="page__title">
 			Editors page
 		</h1>
-		<EditorJSON />
+		<EditorJSON api-url="https://pokeapi.co/api/v2/pokemon/pikachu" />
 	</div>
 </template>
 

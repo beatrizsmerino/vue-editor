@@ -193,7 +193,7 @@ module.exports = {
 		"newline-after-var": 0,
 		"newline-before-return": 2,
 		"newline-per-chained-call": 2,
-		"no-alert": 1,
+		"no-alert": 0,
 		"no-array-constructor": 2,
 		"no-await-in-loop": 2,
 		"no-bitwise": 2,
