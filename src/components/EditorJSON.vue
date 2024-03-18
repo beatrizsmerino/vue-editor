@@ -1,7 +1,7 @@
 <template>
 	<div class="editor-json theme--brand-2">
 		<h2 class="page__subtitle">
-			Vue JSON editor
+			JSON editor
 		</h2>
 		<div class="editor-json__content">
 			<JsonEditorVue
