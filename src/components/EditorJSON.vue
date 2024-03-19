@@ -45,6 +45,7 @@
 </template>
 
 <script>
+	import { ref, onMounted } from "vue";
 	import "vanilla-jsoneditor/themes/jse-theme-dark.css";
 	import JsonEditorVue from "json-editor-vue";
 
@@ -59,40 +60,53 @@
 				"required": true,
 			},
 		},
-		data() {
-			return {
-				"json": {
-					"msg": "demo of jsoneditor",
-				},
-			};
-		},
-		created() {
-			this.getData(this.apiUrl);
-		},
-		"methods": {
-			getData(apiUrl) {
+		setup() {
+			const json = ref({
+				"msg": "demo of jsoneditor",
+			});
+
+			const getData = apiUrl => {
 				fetch(apiUrl).
 					then(res => res.json()).
 					then(data => {
 						this.json = data;
 					});
-			},
-			updateData(value) {
+			};
+
+			const updateData = value => {
 				console.log("value:", value);
-			},
-			saveData() {
+			};
+
+			const saveData = () => {
 				localStorage.setItem("editor-json", JSON.stringify(this.json));
-			},
-			copyData() {
+			};
+
+			const copyData = () => {
 				JSON.stringify(this.json);
-			},
-			copyDataSuccess() {
+			};
+
+			const copyDataSuccess = () => {
 				alert("Copied JSON to the clipboard");
-			},
-			copyDataError(error) {
+			};
+
+			const copyDataError = error => {
 				alert("Failed to copy JSON to the clipboard");
 				console.log(error);
-			},
+			};
+
+			onMounted(() => {
+				this.getData(this.apiUrl);
+			});
+
+			return {
+				json,
+				getData,
+				updateData,
+				saveData,
+				copyData,
+				copyDataSuccess,
+				copyDataError,
+			};
 		},
 	};
 </script>
