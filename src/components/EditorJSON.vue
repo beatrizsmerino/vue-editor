@@ -60,7 +60,7 @@
 				"required": true,
 			},
 		},
-		setup() {
+		setup(props) {
 			const json = ref({
 				"msg": "demo of jsoneditor",
 			});
@@ -69,7 +69,7 @@
 				fetch(apiUrl).
 					then(res => res.json()).
 					then(data => {
-						this.json = data;
+						json.value = data;
 					});
 			};
 
@@ -78,11 +78,11 @@
 			};
 
 			const saveData = () => {
-				localStorage.setItem("editor-json", JSON.stringify(this.json));
+				localStorage.setItem("editor-json", JSON.stringify(json.value));
 			};
 
 			const copyData = () => {
-				JSON.stringify(this.json);
+				JSON.stringify(json.value);
 			};
 
 			const copyDataSuccess = () => {
@@ -95,7 +95,7 @@
 			};
 
 			onMounted(() => {
-				this.getData(this.apiUrl);
+				getData(props.apiUrl);
 			});
 
 			return {
