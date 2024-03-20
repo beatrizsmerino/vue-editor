@@ -87,7 +87,7 @@
 
 	const copyDataError = error => {
 		alert("Failed to copy JSON to the clipboard");
-		console.log(error);
+		console.error("Failed to copy JSON to the clipboard:", error);
 	};
 
 	onMounted(() => {
