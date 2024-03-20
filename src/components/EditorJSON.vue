@@ -61,9 +61,14 @@
 	});
 
 	const getData = async apiUrl => {
-		const response = await fetch(apiUrl);
-		const data = await response.json();
-		json.value = data;
+		try {
+			const response = await fetch(apiUrl);
+			const data = await response.json();
+			json.value = data;
+		} catch (error) {
+			alert("Failed to fetch data");
+			console.error("Failed to fetch data:", error);
+		}
 	};
 
 	const updateData = value => {
