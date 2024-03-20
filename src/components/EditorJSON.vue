@@ -5,13 +5,13 @@
 		</h2>
 		<div class="editor-json__content">
 			<JsonEditorVue
-				:model-value="json"
 				class="json-editor-vue jse-theme-dark"
 				mode="text"
 				:ask-to-format="true"
 				:read-only="false"
 				:indentation="4"
-				:on-change="updateData"
+				:model-value="json"
+				@update:modelValue="updateData"
 			/>
 			<div class="editor-json__actions">
 				<button
@@ -44,57 +44,63 @@
 	</div>
 </template>
 
-<script>
+<script setup>
+	import { ref, onMounted, defineProps } from "vue";
 	import "vanilla-jsoneditor/themes/jse-theme-dark.css";
 	import JsonEditorVue from "json-editor-vue";
 
-	export default {
-		"name": "EditorJSON",
-		"components": {
-			JsonEditorVue,
+	const props = defineProps({
+		"apiUrl": {
+			"type": String,
+			"required": true,
 		},
-		"props": {
-			"apiUrl": {
-				"type": String,
-				"required": true,
-			},
-		},
-		data() {
-			return {
-				"json": {
-					"msg": "demo of jsoneditor",
-				},
-			};
-		},
-		created() {
-			this.getData(this.apiUrl);
-		},
-		"methods": {
-			getData(apiUrl) {
-				fetch(apiUrl).
-					then(res => res.json()).
-					then(data => {
-						this.json = data;
-					});
-			},
-			updateData(value) {
-				console.log("value:", value);
-			},
-			saveData() {
-				localStorage.setItem("editor-json", JSON.stringify(this.json));
-			},
-			copyData() {
-				JSON.stringify(this.json);
-			},
-			copyDataSuccess() {
-				alert("Copied JSON to the clipboard");
-			},
-			copyDataError(error) {
-				alert("Failed to copy JSON to the clipboard");
-				console.log(error);
-			},
-		},
+	});
+
+	const json = ref({
+		"msg": "demo of jsoneditor",
+	});
+
+	const getData = async apiUrl => {
+		try {
+			const response = await fetch(apiUrl);
+			const data = await response.json();
+			json.value = data;
+		} catch (error) {
+			alert("Failed to fetch data");
+			console.error("Failed to fetch data:", error);
+		}
 	};
+
+	const updateData = value => {
+		try {
+			const valueParsed = typeof value === "string" ? JSON.parse(value) : value;
+			json.value = valueParsed;
+		} catch (error) {
+			alert("Error parsing updated JSON");
+			console.error("Error parsing updated JSON:", error);
+		}
+	};
+
+	const saveData = () => {
+		localStorage.setItem("editor-json", JSON.stringify(json.value));
+	};
+
+	const copyData = () => {
+		JSON.stringify(json.value);
+	};
+
+	const copyDataSuccess = () => {
+		alert("Copied JSON to the clipboard");
+	};
+
+	const copyDataError = error => {
+		alert("Failed to copy JSON to the clipboard");
+		console.error("Failed to copy JSON to the clipboard:", error);
+	};
+
+	onMounted(() => {
+		getData(props.apiUrl);
+	});
 </script>
 
 <style lang="scss" scoped>
