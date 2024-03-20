@@ -60,12 +60,10 @@
 		"msg": "demo of jsoneditor",
 	});
 
-	const getData = apiUrl => {
-		fetch(apiUrl).
-			then(res => res.json()).
-			then(data => {
-				json.value = data;
-			});
+	const getData = async apiUrl => {
+		const response = await fetch(apiUrl);
+		const data = await response.json();
+		json.value = data;
 	};
 
 	const updateData = value => {
