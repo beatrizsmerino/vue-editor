@@ -44,71 +44,54 @@
 	</div>
 </template>
 
-<script>
-	import { ref, onMounted } from "vue";
+<script setup>
+	import { ref, onMounted, defineProps } from "vue";
 	import "vanilla-jsoneditor/themes/jse-theme-dark.css";
 	import JsonEditorVue from "json-editor-vue";
 
-	export default {
-		"name": "EditorJSON",
-		"components": {
-			JsonEditorVue,
+	const props = defineProps({
+		"apiUrl": {
+			"type": String,
+			"required": true,
 		},
-		"props": {
-			"apiUrl": {
-				"type": String,
-				"required": true,
-			},
-		},
-		setup(props) {
-			const json = ref({
-				"msg": "demo of jsoneditor",
+	});
+
+	const json = ref({
+		"msg": "demo of jsoneditor",
+	});
+
+	const getData = apiUrl => {
+		fetch(apiUrl).
+			then(res => res.json()).
+			then(data => {
+				json.value = data;
 			});
-
-			const getData = apiUrl => {
-				fetch(apiUrl).
-					then(res => res.json()).
-					then(data => {
-						json.value = data;
-					});
-			};
-
-			const updateData = value => {
-				console.log("value:", value);
-			};
-
-			const saveData = () => {
-				localStorage.setItem("editor-json", JSON.stringify(json.value));
-			};
-
-			const copyData = () => {
-				JSON.stringify(json.value);
-			};
-
-			const copyDataSuccess = () => {
-				alert("Copied JSON to the clipboard");
-			};
-
-			const copyDataError = error => {
-				alert("Failed to copy JSON to the clipboard");
-				console.log(error);
-			};
-
-			onMounted(() => {
-				getData(props.apiUrl);
-			});
-
-			return {
-				json,
-				getData,
-				updateData,
-				saveData,
-				copyData,
-				copyDataSuccess,
-				copyDataError,
-			};
-		},
 	};
+
+	const updateData = value => {
+		console.log("value:", value);
+	};
+
+	const saveData = () => {
+		localStorage.setItem("editor-json", JSON.stringify(json.value));
+	};
+
+	const copyData = () => {
+		JSON.stringify(json.value);
+	};
+
+	const copyDataSuccess = () => {
+		alert("Copied JSON to the clipboard");
+	};
+
+	const copyDataError = error => {
+		alert("Failed to copy JSON to the clipboard");
+		console.log(error);
+	};
+
+	onMounted(() => {
+		getData(props.apiUrl);
+	});
 </script>
 
 <style lang="scss" scoped>
