@@ -69,8 +69,13 @@
 	};
 
 	const updateData = value => {
-		const valueParsed = typeof value === "string" ? JSON.parse(value) : value;
-		json.value = valueParsed;
+		try {
+			const valueParsed = typeof value === "string" ? JSON.parse(value) : value;
+			json.value = valueParsed;
+		} catch (error) {
+			alert("Error parsing updated JSON");
+			console.error("Error parsing updated JSON:", error);
+		}
 	};
 
 	const saveData = () => {
