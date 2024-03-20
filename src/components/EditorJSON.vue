@@ -69,7 +69,6 @@
 	};
 
 	const updateData = value => {
-		console.log("value:", value);
 		const valueParsed = typeof value === "string" ? JSON.parse(value) : value;
 		json.value = valueParsed;
 	};
