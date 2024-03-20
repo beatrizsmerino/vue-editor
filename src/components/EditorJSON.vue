@@ -5,13 +5,13 @@
 		</h2>
 		<div class="editor-json__content">
 			<JsonEditorVue
-				:model-value="json"
 				class="json-editor-vue jse-theme-dark"
 				mode="text"
 				:ask-to-format="true"
 				:read-only="false"
 				:indentation="4"
-				:on-change="updateData"
+				:model-value="json"
+				@update:modelValue="updateData"
 			/>
 			<div class="editor-json__actions">
 				<button
@@ -70,6 +70,8 @@
 
 	const updateData = value => {
 		console.log("value:", value);
+		const valueParsed = typeof value === "string" ? JSON.parse(value) : value;
+		json.value = valueParsed;
 	};
 
 	const saveData = () => {
