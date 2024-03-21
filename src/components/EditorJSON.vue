@@ -15,7 +15,7 @@
 			/>
 			<div class="editor-json__actions">
 				<button
-					v-clipboard:copy="copyData"
+					v-clipboard="copyData"
 					v-clipboard:success="copyDataSuccess"
 					v-clipboard:error="copyDataError"
 					type="button"
@@ -48,6 +48,7 @@
 	import { ref, onMounted, defineProps } from "vue";
 	import "vanilla-jsoneditor/themes/jse-theme-dark.css";
 	import JsonEditorVue from "json-editor-vue";
+	import { Clipboard } from "v-clipboard";
 
 	const props = defineProps({
 		"apiUrl": {
@@ -86,7 +87,7 @@
 	};
 
 	const copyData = () => {
-		JSON.stringify(json.value);
+		Clipboard.copy(JSON.stringify(json.value));
 	};
 
 	const copyDataSuccess = () => {
