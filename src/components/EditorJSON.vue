@@ -87,7 +87,7 @@
 	};
 
 	const copyData = () => {
-		Clipboard.copy(JSON.stringify(json.value));
+		Clipboard.copy(json.value);
 	};
 
 	const copyDataSuccess = () => {
