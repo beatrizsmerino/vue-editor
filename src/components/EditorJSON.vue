@@ -45,7 +45,7 @@
 </template>
 
 <script setup>
-	import { ref, onMounted, defineProps } from "vue";
+	import { ref, onMounted } from "vue";
 	import "vanilla-jsoneditor/themes/jse-theme-dark.css";
 	import JsonEditorVue from "json-editor-vue";
 	import { Clipboard } from "v-clipboard";
