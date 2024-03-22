@@ -7,8 +7,8 @@ import "virtual:svg-icons-register";
 import Icon from "@/components/Icon.vue";
 Vue.component("Icon", Icon);
 
-import VueClipboard from "vue-clipboard2";
-Vue.use(VueClipboard);
+import Clipboard from "v-clipboard";
+Vue.use(Clipboard);
 
 Vue.config.productionTip = false;
 
