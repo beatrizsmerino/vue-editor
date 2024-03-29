@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import PageNav from "@/components/PageNav.vue";
+	import PageNav from "@/components/Page/PageNav.vue";
 	export default {
 		"name": "PageHeader",
 		"components": {
