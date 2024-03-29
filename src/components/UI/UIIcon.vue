@@ -16,7 +16,7 @@
 
 <script>
 	export default {
-		"name": "Icon",
+		"name": "UIIcon",
 		"props": {
 			"name": {
 				"type": String,

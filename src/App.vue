@@ -1,8 +1,6 @@
 <template>
 	<div id="app">
-		<header class="page__header">
-			<PageNav />
-		</header>
+		<PageHeader />
 		<main class="page__main">
 			<router-view />
 		</main>
@@ -10,11 +8,11 @@
 </template>
 
 <script>
-	import PageNav from "@/components/PageNav.vue";
+	import PageHeader from "@/components/Page/PageHeader.vue";
 	export default {
 		"name": "App",
 		"components": {
-			PageNav,
+			PageHeader,
 		},
 		"watch": {
 			"$route": {

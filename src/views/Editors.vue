@@ -8,7 +8,7 @@
 </template>
 
 <script>
-	import EditorJSON from "@/components/EditorJSON.vue";
+	import EditorJSON from "@/components/Editor/EditorJSON.vue";
 
 	export default {
 		"name": "Editors",
