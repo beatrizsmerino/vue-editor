@@ -1,5 +1,5 @@
 <template>
-	<div class="editor-json theme--brand-2">
+	<div class="editor-json">
 		<h2 class="page__subtitle">
 			JSON editor
 		</h2>
@@ -19,7 +19,7 @@
 					v-clipboard:success="copyDataSuccess"
 					v-clipboard:error="copyDataError"
 					type="button"
-					class="editor-json__button editor-json__button-copy"
+					class="editor-json__button editor-json__button--copy"
 				>
 					<UIIcon
 						name="copy"
@@ -29,7 +29,7 @@
 					<span>Copy</span>
 				</button>
 				<button
-					class="editor-json__button editor-json__button-save"
+					class="editor-json__button editor-json__button--save"
 					@click="saveData"
 				>
 					<UIIcon
@@ -159,87 +159,27 @@
 					margin-right: 0.5rem;
 				}
 			}
-		}
 
-		&.theme {
-			&--light {
-				.editor-json {
-					&__button-copy {
-						border-color: color.mix($color-black, $color-white, 20%);
-						background-color: $color-white;
-						color: color.mix($color-black, $color-white, 20%);
+			&--copy {
+				border-color: $color-brand-2;
+				background-color: $color-white;
+				color: $color-brand-2;
 
-						&:hover {
-							border-color: color.mix($color-black, $color-white, 30%);
-							background-color: color.mix($color-black, $color-white, 30%);
-							color: $color-white;
-						}
-					}
-
-					&__button-save {
-						border-color: color.mix($color-black, $color-white, 20%);
-						background-color: color.mix($color-black, $color-white, 20%);
-						color: $color-white;
-
-						&:hover {
-							border-color: color.mix($color-black, $color-white, 30%);
-							background-color: color.mix($color-black, $color-white, 30%);
-						}
-					}
+				&:hover {
+					border-color: $color-brand-1;
+					background-color: $color-white;
+					color: $color-brand-1;
 				}
 			}
 
-			&--brand-1 {
-				.editor-json {
-					&__button-copy {
-						border-color: $color-brand-1;
-						background-color: $color-white;
-						color: $color-brand-1;
+			&--save {
+				border-color: $color-brand-2;
+				background-color: $color-brand-2;
+				color: $color-white;
 
-						&:hover {
-							border-color: $color-brand-2;
-							background-color: $color-white;
-							color: $color-brand-2;
-						}
-					}
-
-					&__button-save {
-						border-color: $color-brand-1;
-						background-color: $color-brand-1;
-						color: $color-white;
-
-						&:hover {
-							border-color: $color-brand-2;
-							background-color: $color-brand-2;
-						}
-					}
-				}
-			}
-
-			&--brand-2 {
-				.editor-json {
-					&__button-copy {
-						border-color: $color-brand-2;
-						background-color: $color-white;
-						color: $color-brand-2;
-
-						&:hover {
-							border-color: $color-brand-1;
-							background-color: $color-white;
-							color: $color-brand-1;
-						}
-					}
-
-					&__button-save {
-						border-color: $color-brand-2;
-						background-color: $color-brand-2;
-						color: $color-white;
-
-						&:hover {
-							border-color: $color-brand-1;
-							background-color: $color-brand-1;
-						}
-					}
+				&:hover {
+					border-color: $color-brand-1;
+					background-color: $color-brand-1;
 				}
 			}
 		}
