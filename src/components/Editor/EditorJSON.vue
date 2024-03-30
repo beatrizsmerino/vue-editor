@@ -21,7 +21,7 @@
 					type="button"
 					class="editor-json__button editor-json__button-copy"
 				>
-					<Icon
+					<UIIcon
 						name="copy"
 						aria-label="Copy json"
 						title="Copy json"
@@ -32,7 +32,7 @@
 					class="editor-json__button editor-json__button-save"
 					@click="saveData"
 				>
-					<Icon
+					<UIIcon
 						name="save"
 						aria-label="Save json"
 						title="Save json"

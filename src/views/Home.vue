@@ -1,6 +1,6 @@
 <template>
 	<div class="page__inner page__container">
-		<Icon
+		<UIIcon
 			name="logo-vue"
 			aria-label="Vue logo"
 			title="Vue logo"
