@@ -32,4 +32,71 @@
 	};
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+	.page {
+		color: $color-brand-2;
+		font-family: Avenir, Helvetica, Arial, sans-serif;
+
+		&__container {
+			width: 100%;
+			max-width: 140rem;
+			margin: 0 auto;
+		}
+
+		&__inner {
+			position: relative;
+			padding-right: 3rem;
+			padding-left: 3rem;
+
+			@include media("md") {
+				padding-right: 2rem;
+				padding-left: 2rem;
+			}
+		}
+
+		&__title {
+			margin-bottom: $font-size--h1;
+			font-size: $font-size--h1;
+			line-height: $font-size--h1;
+			text-align: center;
+		}
+
+		&__subtitle {
+			margin-bottom: $font-size--h3;
+			font-size: $font-size--h3;
+			line-height: $font-size--h3;
+			text-align: center;
+		}
+
+		&__header {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+		}
+
+		&__body {
+			font-size: $font-size--global;
+			line-height: $line-height--global;
+		}
+
+		&__main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+			background-color: $color-white;
+		}
+
+		&__section {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__article {
+			&:not(:last-child) {
+				margin-bottom: 4rem;
+			}
+		}
+	}
+</style>
