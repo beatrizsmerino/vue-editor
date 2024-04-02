@@ -1,12 +1,11 @@
 // PARTIALS SCSS
-// ABSTRACTS (variables, functions, mixins), BASE, COMPONENTS, LAYOUTS and PAGES
+// ABSTRACTS, BASE, COMPONENTS, LAYOUTS and PAGES
 // =================================================
 
-// ABSTRACTS
+// ABSTRACTS (variables, mixins, functions)
 //----------------------------------------------------------------------
-// variables
 @import "abstracts/variables/abstracts-variables-breakpoints";
 @import "abstracts/variables/abstracts-variables-colors";
 @import "abstracts/variables/abstracts-variables-fonts";
-// mixins
+// ------------------
 @import "abstracts/mixins/abstracts-mixins-media";
