@@ -3,8 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import LayoutDefault from "@/layouts/LayoutDefault.vue";
-Vue.component("LayoutDefault", LayoutDefault);
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
+Vue.component("DefaultLayout", DefaultLayout);
 
 import "virtual:svg-icons-register";
 import UIIcon from "@/components/UI/UIIcon.vue";

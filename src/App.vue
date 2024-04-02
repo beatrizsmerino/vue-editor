@@ -1,5 +1,5 @@
 <template>
-	<LayoutDefault />
+	<DefaultLayout />
 </template>
 
 <script>

@@ -11,7 +11,7 @@
 	import PageHeader from "@/components/Page/PageHeader.vue";
 
 	export default {
-		"name": "LayoutDefault",
+		"name": "DefaultLayout",
 		"components": {
 			PageHeader,
 		},
