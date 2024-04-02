@@ -1,6 +1,6 @@
-// MIXIN
-// MEDIA QUERIES
-// ------------------
+// ABSTRACTS - MIXINS
+// MEDIA
+// =================================================
 
 @function contains($list, $item) {
 	@return index($list, $item) != null;

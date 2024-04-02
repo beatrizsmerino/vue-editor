@@ -1,22 +1,21 @@
-// SETTINGS - VARIABLES
+// ABSTRACTS - VARIABLES
 // FONTS
 // =================================================
 
-// FONTS - FAMILY CORPORATIVE
+// BRAND
 // ------------------
 $font-1: "Raleway", helvetica, sans-serif;
 
-// FONTS - SIZE CONVERSION
+// CONVERSION
 // ------------------
 // px to em more easy -> based to 10px insted of 16px
 // 1em = 16px -> default css
 // 16px * 0.625 = 10px -> now
 // 1.6em * 10px = 16px -> use
-//
 $font-size--html: 62.5%;
 $font-size--body: 10px;
 
-// FONTS - SIZE H1-H6
+// H1-H6
 // ------------------
 $font-size--h1: 3.6rem !default;
 $font-size--h2: 2.8rem !default;
@@ -25,7 +24,7 @@ $font-size--h4: 2rem !default;
 $font-size--h5: 1.8rem !default;
 $font-size--h6: 1.6rem !default;
 
-// FONTS - SIZE BASE
+// BASE
 // ------------------
 $font-size--global: 1.6rem !default;
 $line-height--global: 2.4rem !default;
