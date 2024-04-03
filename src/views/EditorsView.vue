@@ -11,7 +11,7 @@
 	import EditorJSON from "@/components/Editor/EditorJSON.vue";
 
 	export default {
-		"name": "Editors",
+		"name": "EditorsView",
 		"components": {
 			EditorJSON,
 		},
