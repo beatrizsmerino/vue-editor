@@ -80,7 +80,6 @@
 			justify-content: center;
 			padding-top: 5rem;
 			padding-bottom: 5rem;
-			background-color: $color-white;
 		}
 
 		&__section {
