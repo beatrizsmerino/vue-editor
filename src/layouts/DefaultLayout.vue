@@ -68,11 +68,6 @@
 			text-align: center;
 		}
 
-		&__header {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-		}
-
 		&__body {
 			font-size: $font-size--global;
 			line-height: $line-height--global;

@@ -13,3 +13,12 @@
 		},
 	};
 </script>
+
+<style lang="scss" scoped>
+	.page {
+		&__header {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+		}
+	}
+</style>
