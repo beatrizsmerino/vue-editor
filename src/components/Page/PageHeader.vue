@@ -1,5 +1,5 @@
 <template>
-	<header class="page__header">
+	<header class="page-header">
 		<PageNav />
 	</header>
 </template>
@@ -15,10 +15,8 @@
 </script>
 
 <style lang="scss" scoped>
-	.page {
-		&__header {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-		}
+	.page-header {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 </style>
