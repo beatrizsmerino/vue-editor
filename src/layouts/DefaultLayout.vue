@@ -56,6 +56,7 @@
 
 		&__title {
 			margin-bottom: $font-size--h1;
+			color: $color-white;
 			font-size: $font-size--h1;
 			line-height: $font-size--h1;
 			text-align: center;
