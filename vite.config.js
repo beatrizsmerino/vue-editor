@@ -13,7 +13,7 @@ export default defineConfig({
 		vue(),
 		createSvgIconsPlugin({
 			"iconDirs": [
-				fileURLToPath(new URL("src/assets/images/icons/svg", import.meta.url)),
+				fileURLToPath(new URL("src/assets/icons", import.meta.url)),
 			],
 			"symbolId": "icon-[dir][name]",
 		}),
