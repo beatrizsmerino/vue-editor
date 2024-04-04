@@ -6,6 +6,7 @@
 
 <script>
 	import PageNav from "@/components/Page/PageNav.vue";
+
 	export default {
 		"name": "PageHeader",
 		"components": {
