@@ -1,5 +1,5 @@
 <template>
-	<div class="page-nav page__inner">
+	<nav class="page-nav page__inner">
 		<ul class="page-nav__list">
 			<li
 				v-for="(item, index) in navList"
@@ -14,7 +14,7 @@
 				</router-link>
 			</li>
 		</ul>
-	</div>
+	</nav>
 </template>
 
 <script>
