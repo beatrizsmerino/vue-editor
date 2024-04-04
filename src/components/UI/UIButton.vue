@@ -48,12 +48,12 @@
 
 		&--line {
 			border-color: $color-brand-2;
-			background-color: $color-white;
+			background-color: transparent;
 			color: $color-brand-2;
 
 			&:hover {
 				border-color: $color-brand-1;
-				background-color: $color-white;
+				background-color: transparent;
 				color: $color-brand-1;
 			}
 		}
@@ -61,7 +61,7 @@
 		&--solid {
 			border-color: $color-brand-2;
 			background-color: $color-brand-2;
-			color: $color-white;
+			color: var(--color-background);
 
 			&:hover {
 				border-color: $color-brand-1;
