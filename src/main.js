@@ -7,6 +7,9 @@ import "./assets/css/main.css";
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
 Vue.component("DefaultLayout", DefaultLayout);
 
+import UIButton from "@/components/UI/UIButton.vue";
+Vue.component("UIButton", UIButton);
+
 import "virtual:svg-icons-register";
 import UIIcon from "@/components/UI/UIIcon.vue";
 Vue.component("UIIcon", UIIcon);
