@@ -1,10 +1,16 @@
 <template>
-	<div class="page__inner page__container" />
+	<div>
+		<TheWelcome />
+	</div>
 </template>
 
 <script>
+	import TheWelcome from "@/components/Hello/TheWelcome.vue";
+
 	export default {
 		"name": "HomeView",
-		"components": {},
+		"components": {
+			TheWelcome,
+		},
 	};
 </script>
