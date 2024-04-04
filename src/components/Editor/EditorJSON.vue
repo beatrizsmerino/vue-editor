@@ -18,14 +18,14 @@
 					v-clipboard="copyData"
 					v-clipboard:success="copyDataSuccess"
 					v-clipboard:error="copyDataError"
-					class="button--line"
+					class="button--line button--dark"
 					type="button"
 					button-text="Copy"
 					button-icon="copy"
 					button-label="Copy json"
 				/>
 				<UIButton
-					class="button--solid"
+					class="button--solid button--dark"
 					type="button"
 					button-text="Save"
 					button-icon="save"

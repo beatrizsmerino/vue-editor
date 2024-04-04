@@ -56,6 +56,20 @@
 				background-color: transparent;
 				color: $color-brand-1;
 			}
+
+			&.button {
+				&--dark {
+					border-color: $color-brand-1;
+					background-color: transparent;
+					color: $color-brand-1;
+
+					&:hover {
+						border-color: $color-white;
+						background-color: transparent;
+						color: $color-white;
+					}
+				}
+			}
 		}
 
 		&--solid {
@@ -66,6 +80,19 @@
 			&:hover {
 				border-color: $color-brand-1;
 				background-color: $color-brand-1;
+			}
+
+			&.button {
+				&--dark {
+					border-color: $color-brand-1;
+					background-color: $color-brand-1;
+					color: var(--color-background);
+
+					&:hover {
+						border-color: $color-white;
+						background-color: $color-white;
+					}
+				}
 			}
 		}
 	}
