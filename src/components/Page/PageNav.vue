@@ -45,6 +45,17 @@
 	.page-nav {
 		display: flex;
 		justify-content: center;
+		width: 100%;
+		margin-top: 3.2rem;
+		font-size: 1.2rem;
+
+		@media (width >= 1024px) {
+			justify-content: flex-start;
+			margin-top: 1.6rem;
+			margin-left: -1.6rem;
+			padding: 1.6rem 0;
+			font-size: 1.6rem;
+		}
 
 		&__list {
 			display: flex;
@@ -57,22 +68,25 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			border-left: 0.1rem solid var(--color-border);
 
-			&:not(:last-child) {
-				&:after {
-					content: "|";
-					display: inline-block;
-					padding: 0 1rem;
-				}
+			&:first-of-type {
+				border: 0;
 			}
 		}
 
 		&__link {
-			color: $color-brand-2;
-			font-weight: bold;
+			display: inline-block;
+			padding: 0 1.6rem;
+			font-size: 1.6rem;
+			user-select: none;
 
 			&.router-link-exact-active {
-				color: $color-brand-1;
+				color: var(--color-text);
+
+				&:hover {
+					background-color: transparent;
+				}
 			}
 		}
 	}
