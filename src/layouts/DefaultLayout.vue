@@ -69,10 +69,7 @@
 			text-align: center;
 		}
 
-		&__body {
-			font-size: $font-size--global;
-			line-height: $line-height--global;
-		}
+		// &__body {}
 
 		&__main {
 			display: flex;
