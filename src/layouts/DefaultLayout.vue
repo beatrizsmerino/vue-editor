@@ -38,14 +38,14 @@
 <style lang="scss">
 	:root {
 		// color palette from <https://github.com/vuejs/theme>
-		--vt-c-white: $color-white;
-		--vt-c-black: $color-dark;
-		--vt-c-indigo: $color-brand-vue-2;
-		--vt-c-divider-light-2: rgb($color-metal / 12%);
-		--vt-c-divider-dark-2: rgb($color-gray-dark / 48%);
+		--vt-c-white: #ffffff;
+		--vt-c-black: #181818;
+		--vt-c-indigo: #2c3e50;
+		--vt-c-divider-light-2: rgb(60 60 60 / 12%);
+		--vt-c-divider-dark-2: rgb(84 84 84 / 48%);
 		--vt-c-text-light-1: var(--vt-c-indigo);
 		--vt-c-text-dark-1: var(--vt-c-white);
-		--vt-c-text-dark-2: rgb($color-light / 64%);
+		--vt-c-text-dark-2: rgb(235 235 235 / 64%);
 
 		// semantic color variables for this project
 		--color-background: var(--vt-c-white);
@@ -150,14 +150,14 @@
 	.green {
 		padding: 0.3rem;
 		transition: 0.4s;
-		color: $color-brand-vue-1;
+		color: hsl(160deg 100% 37% / 100%);
 		text-decoration: none;
 	}
 
 	@media (hover: hover) {
 		a:hover {
-			background-color: rgba($color-brand-vue-1, 0.2);
-			color: $color-brand-vue-1;
+			background-color: hsl(160deg 100% 37% / 20%);
+			color: hsl(160deg 100% 37% / 100%);
 		}
 	}
 </style>
