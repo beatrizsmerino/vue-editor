@@ -1,5 +1,8 @@
 <template>
-	<div id="app">
+	<div
+		id="app"
+		class="page__app"
+	>
 		<PageHeader />
 		<main class="page__main">
 			<router-view />
@@ -33,6 +36,45 @@
 </script>
 
 <style lang="scss">
+	:root {
+		// color palette from <https://github.com/vuejs/theme>
+		--vt-c-white: #ffffff;
+		--vt-c-white-soft: #f8f8f8;
+		--vt-c-white-mute: #f2f2f2;
+		--vt-c-black: #181818;
+		--vt-c-black-soft: #222222;
+		--vt-c-black-mute: #282828;
+		--vt-c-indigo: #2c3e50;
+		--vt-c-divider-light-1: rgb(60 60 60 / 29%);
+		--vt-c-divider-light-2: rgb(60 60 60 / 12%);
+		--vt-c-divider-dark-1: rgb(84 84 84 / 65%);
+		--vt-c-divider-dark-2: rgb(84 84 84 / 48%);
+		--vt-c-text-light-1: var(--vt-c-indigo);
+		--vt-c-text-light-2: rgb(60 60 60 / 66%);
+		--vt-c-text-dark-1: var(--vt-c-white);
+		--vt-c-text-dark-2: rgb(235 235 235 / 64%);
+
+		// semantic color variables for this project
+		--color-background: var(--vt-c-white);
+		--color-background-soft: var(--vt-c-white-soft);
+		--color-background-mute: var(--vt-c-white-mute);
+		--color-border: var(--vt-c-divider-light-2);
+		--color-border-hover: var(--vt-c-divider-light-1);
+		--color-heading: var(--vt-c-text-light-1);
+		--color-text: var(--vt-c-text-light-1);
+		--section-gap: 160px;
+
+		@media (prefers-color-scheme: dark) {
+			--color-background: var(--vt-c-black);
+			--color-background-soft: var(--vt-c-black-soft);
+			--color-background-mute: var(--vt-c-black-mute);
+			--color-border: var(--vt-c-divider-dark-2);
+			--color-border-hover: var(--vt-c-divider-dark-1);
+			--color-heading: var(--vt-c-text-dark-1);
+			--color-text: var(--vt-c-text-dark-2);
+		}
+	}
+
 	.page {
 		color: $color-brand-2;
 		font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -69,7 +111,32 @@
 			text-align: center;
 		}
 
-		// &__body {}
+		&__body {
+			min-height: 100vh;
+			transition:
+				color 0.5s,
+				background-color 0.5s;
+			background: var(--color-background);
+			color: var(--color-text);
+
+			@media (width >= 1024px) {
+				display: flex;
+				place-items: center;
+			}
+		}
+
+		&__app {
+			max-width: 1280px;
+			margin: 0 auto;
+			padding: 3.2rem;
+			font-weight: normal;
+
+			@media (width >= 1024px) {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				padding: 0 3.2rem;
+			}
+		}
 
 		&__main {
 			display: flex;
@@ -89,6 +156,21 @@
 			&:not(:last-child) {
 				margin-bottom: 4rem;
 			}
+		}
+	}
+
+	a,
+	.green {
+		padding: 0.3rem;
+		transition: 0.4s;
+		color: hsl(160deg 100% 37% / 100%);
+		text-decoration: none;
+	}
+
+	@media (hover: hover) {
+		a:hover {
+			background-color: hsl(160deg 100% 37% / 20%);
+			color: hsl(160deg 100% 37% / 100%);
 		}
 	}
 </style>
