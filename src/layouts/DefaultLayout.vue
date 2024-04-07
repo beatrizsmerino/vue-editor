@@ -40,6 +40,8 @@
 		// color palette from <https://github.com/vuejs/theme>
 		--vt-c-white: #ffffff;
 		--vt-c-black: #181818;
+		--vt-c-green: hsl(160deg 100% 37% / 100%);
+		--vt-c-green-light: hsl(160deg 100% 37% / 20%);
 		--vt-c-indigo: #2c3e50;
 		--vt-c-divider-light-2: rgb(60 60 60 / 12%);
 		--vt-c-divider-dark-2: rgb(84 84 84 / 48%);
@@ -154,14 +156,14 @@
 	.green {
 		padding: 0.3rem;
 		transition: 0.4s;
-		color: hsl(160deg 100% 37% / 100%);
+		color: var(--vt-c-green);
 		text-decoration: none;
 	}
 
 	@media (hover: hover) {
 		a:hover {
-			background-color: hsl(160deg 100% 37% / 20%);
-			color: hsl(160deg 100% 37% / 100%);
+			background-color: var(--vt-c-green-light);
+			color: var(--vt-c-green);
 		}
 	}
 </style>
