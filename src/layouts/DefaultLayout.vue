@@ -45,26 +45,24 @@
 		--vt-c-indigo: #2c3e50;
 		--vt-c-divider-light-2: rgb(60 60 60 / 12%);
 		--vt-c-divider-dark-2: rgb(84 84 84 / 48%);
-		--vt-c-text-light-1: var(--vt-c-indigo);
-		--vt-c-text-dark-1: var(--vt-c-white);
 		--vt-c-text-dark-2: rgb(235 235 235 / 64%);
 
 		// semantic color variables for this project
 		--color-background: var(--vt-c-white);
 		--color-border: var(--vt-c-divider-light-2);
-		--color-heading: var(--vt-c-text-light-1);
-		--color-text: var(--vt-c-text-light-1);
-		--color-link: var(--vt-c-text-light-1);
-		--color-button: var(--vt-c-text-light-1);
+		--color-heading: var(--vt-c-indigo);
+		--color-text: var(--vt-c-indigo);
+		--color-link: var(--vt-c-indigo);
+		--color-button: var(--vt-c-indigo);
 		--section-gap: 160px;
 
 		@media (prefers-color-scheme: dark) {
 			--color-background: var(--vt-c-black);
 			--color-border: var(--vt-c-divider-dark-2);
-			--color-heading: var(--vt-c-text-dark-1);
+			--color-heading: var(--vt-c-white);
 			--color-text: var(--vt-c-text-dark-2);
-			--color-link: var(--vt-c-text-dark-1);
-			--color-button: var(--vt-c-text-dark-1);
+			--color-link: var(--vt-c-white);
+			--color-button: var(--vt-c-white);
 		}
 	}
 
