@@ -52,6 +52,8 @@
 		--color-border: var(--vt-c-divider-light-2);
 		--color-heading: var(--vt-c-text-light-1);
 		--color-text: var(--vt-c-text-light-1);
+		--color-link: var(--vt-c-text-light-1);
+		--color-button: var(--vt-c-text-light-1);
 		--section-gap: 160px;
 
 		@media (prefers-color-scheme: dark) {
@@ -59,6 +61,8 @@
 			--color-border: var(--vt-c-divider-dark-2);
 			--color-heading: var(--vt-c-text-dark-1);
 			--color-text: var(--vt-c-text-dark-2);
+			--color-link: var(--vt-c-text-dark-1);
+			--color-button: var(--vt-c-text-dark-1);
 		}
 	}
 
@@ -85,7 +89,7 @@
 
 		&__title {
 			margin-bottom: $font-size--h1;
-			color: $color-white;
+			color: var(--color-heading);
 			font-size: $font-size--h1;
 			line-height: $font-size--h1;
 			text-align: center;

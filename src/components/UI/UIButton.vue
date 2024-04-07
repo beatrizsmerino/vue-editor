@@ -64,9 +64,9 @@
 					color: $color-brand-1;
 
 					&:hover {
-						border-color: $color-white;
+						border-color: var(--color-button);
 						background-color: transparent;
-						color: $color-white;
+						color: var(--color-button);
 					}
 				}
 			}
@@ -89,8 +89,8 @@
 					color: var(--color-background);
 
 					&:hover {
-						border-color: $color-white;
-						background-color: $color-white;
+						border-color: var(--color-button);
+						background-color: var(--color-button);
 					}
 				}
 			}

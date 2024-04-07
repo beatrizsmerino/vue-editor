@@ -82,7 +82,7 @@
 			user-select: none;
 
 			&.router-link-exact-active {
-				color: $color-white;
+				color: var(--color-link);
 
 				&:hover {
 					background-color: transparent;
