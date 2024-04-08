@@ -74,74 +74,21 @@
 
 <template>
 	<div>
-		<WelcomeItem>
+		<WelcomeItem
+			v-for="item in data"
+			:key="item.icon"
+		>
 			<template #icon>
 				<UIIcon
-					:name="data[0].icon"
-					:aria-label="data[0].title"
-					:title="data[0].title"
+					:name="item.icon"
+					:aria-label="item.title"
+					:title="item.title"
 				/>
 			</template>
 			<template #heading>
-				{{ data[0].title }}
+				{{ item.title }}
 			</template>
-			<p v-html="data[0].text" />
-		</WelcomeItem>
-
-		<WelcomeItem>
-			<template #icon>
-				<UIIcon
-					:name="data[1].icon"
-					:aria-label="data[1].title"
-					:title="data[1].title"
-				/>
-			</template>
-			<template #heading>
-				{{ data[1].title }}
-			</template>
-			<p v-html="data[1].text" />
-		</WelcomeItem>
-
-		<WelcomeItem>
-			<template #icon>
-				<UIIcon
-					:name="data[2].icon"
-					:aria-label="data[2].title"
-					:title="data[2].title"
-				/>
-			</template>
-			<template #heading>
-				{{ data[2].title }}
-			</template>
-			<p v-html="data[2].text" />
-		</WelcomeItem>
-
-		<WelcomeItem>
-			<template #icon>
-				<UIIcon
-					:name="data[3].icon"
-					:aria-label="data[3].title"
-					:title="data[3].title"
-				/>
-			</template>
-			<template #heading>
-				{{ data[3].title }}
-			</template>
-			<p v-html="data[3].text" />
-		</WelcomeItem>
-
-		<WelcomeItem>
-			<template #icon>
-				<UIIcon
-					:name="data[4].icon"
-					:aria-label="data[4].title"
-					:title="data[4].title"
-				/>
-			</template>
-			<template #heading>
-				{{ data[4].title }}
-			</template>
-			<p v-html="data[4].text" />
+			<p v-html="item.text" />
 		</WelcomeItem>
 	</div>
 </template>
