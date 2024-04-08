@@ -1,7 +1,7 @@
 <template>
 	<div class="greetings">
 		<h1 class="green">
-			{{ msg }}
+			{{ title }}
 		</h1>
 		<h3>
 			You’ve successfully created a project with
@@ -29,7 +29,7 @@
 	export default {
 		"name": "HelloWorld",
 		"props": {
-			"msg": {
+			"title": {
 				"type": String,
 				"required": true,
 			},

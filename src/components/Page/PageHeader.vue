@@ -6,7 +6,7 @@
 			title="Vue logo"
 		/>
 		<div class="page-header__wrapper">
-			<HelloWorld msg="You did it!" />
+			<HelloWorld title="You did it!" />
 
 			<PageNav />
 		</div>
