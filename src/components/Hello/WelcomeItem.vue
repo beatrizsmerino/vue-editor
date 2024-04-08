@@ -91,11 +91,13 @@
 			flex: 1;
 			margin-left: 1.6rem;
 
-			p {
-				font-size: 1.5rem;
+			&:deep() {
+				p {
+					font-size: 1.5rem;
 
-				a {
-					display: inline;
+					a {
+						display: inline;
+					}
 				}
 			}
 		}

@@ -46,8 +46,10 @@
 		h3 {
 			font-size: 1.92rem;
 
-			a {
-				display: inline;
+			&:deep() {
+				a {
+					display: inline;
+				}
 			}
 		}
 	}
