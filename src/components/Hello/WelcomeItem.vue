@@ -1,10 +1,10 @@
 <template>
-	<div class="item">
-		<span class="item__icon">
+	<div class="welcome-item">
+		<span class="welcome-item__icon">
 			<slot name="icon" />
 		</span>
-		<div class="item__details">
-			<h3 class="item__title">
+		<div class="welcome-item__details">
+			<h3 class="welcome-item__title">
 				<slot name="heading" />
 			</h3>
 			<slot />
@@ -13,7 +13,7 @@
 </template>
 
 <style lang="scss" scoped>
-	.item {
+	.welcome-item {
 		display: flex;
 		position: relative;
 		margin-top: 3.2rem;
