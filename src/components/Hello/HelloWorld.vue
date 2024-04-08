@@ -47,8 +47,7 @@
 			font-size: 1.92rem;
 
 			a {
-				padding-top: 0;
-				padding-bottom: 0;
+				display: inline;
 			}
 		}
 	}
