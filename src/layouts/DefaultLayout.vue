@@ -136,6 +136,11 @@
 			justify-content: center;
 			padding-top: 5rem;
 			padding-bottom: 5rem;
+
+			@media (width >= 1024px) {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
 		}
 
 		&__section {

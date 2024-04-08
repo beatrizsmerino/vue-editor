@@ -16,10 +16,16 @@
 	.welcome-item {
 		display: flex;
 		position: relative;
-		margin-top: 3.2rem;
+
+		&:not(:first-child) {
+			margin-top: 3.2rem;
+
+			@media (width >= 1024px) {
+				margin-top: 0;
+			}
+		}
 
 		@media (width >= 1024px) {
-			margin-top: 0;
 			padding: 0.64rem 0 1.6rem calc(var(--section-gap) / 2);
 		}
 
