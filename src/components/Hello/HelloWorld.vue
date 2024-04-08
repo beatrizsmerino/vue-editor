@@ -59,7 +59,8 @@
 			font-size: 1.92rem;
 
 			a {
-				display: inline;
+				padding-top: 0;
+				padding-bottom: 0;
 			}
 		}
 	}

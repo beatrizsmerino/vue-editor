@@ -95,7 +95,8 @@
 				font-size: 1.5rem;
 
 				a {
-					display: inline;
+					padding-top: 0;
+					padding-bottom: 0;
 				}
 			}
 		}
