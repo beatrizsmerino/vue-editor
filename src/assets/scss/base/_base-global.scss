@@ -30,6 +30,11 @@ body {
 	background-color: $color-white;
 }
 
+#app {
+	font-size: $font-size--global;
+	line-height: $line-height--global;
+}
+
 // LINK
 // ------------------
 a {

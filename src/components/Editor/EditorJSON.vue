@@ -14,31 +14,24 @@
 				@update:modelValue="updateData"
 			/>
 			<div class="editor-json__actions">
-				<button
+				<UIButton
 					v-clipboard="copyData"
 					v-clipboard:success="copyDataSuccess"
 					v-clipboard:error="copyDataError"
+					class="button--line button--dark"
 					type="button"
-					class="editor-json__button editor-json__button--copy"
-				>
-					<UIIcon
-						name="copy"
-						aria-label="Copy json"
-						title="Copy json"
-					/>
-					<span>Copy</span>
-				</button>
-				<button
-					class="editor-json__button editor-json__button--save"
+					button-text="Copy"
+					button-icon="copy"
+					button-label="Copy json"
+				/>
+				<UIButton
+					class="button--solid button--dark"
+					type="button"
+					button-text="Save"
+					button-icon="save"
+					button-label="Save json"
 					@click="saveData"
-				>
-					<UIIcon
-						name="save"
-						aria-label="Save json"
-						title="Save json"
-					/>
-					<span>Save</span>
-				</button>
+				/>
 			</div>
 		</div>
 	</div>
@@ -140,46 +133,6 @@
 			> * {
 				&:not(:last-child) {
 					margin-right: 1rem;
-				}
-			}
-		}
-
-		&__button {
-			display: flex;
-			align-items: center;
-			padding: 0.5rem 1.5rem;
-			border: 0.2rem solid transparent;
-			border-radius: 0.3rem;
-			font-size: 1.6rem;
-			font-weight: bold;
-			cursor: pointer;
-
-			> * {
-				&:not(:last-child) {
-					margin-right: 0.5rem;
-				}
-			}
-
-			&--copy {
-				border-color: $color-brand-2;
-				background-color: $color-white;
-				color: $color-brand-2;
-
-				&:hover {
-					border-color: $color-brand-1;
-					background-color: $color-white;
-					color: $color-brand-1;
-				}
-			}
-
-			&--save {
-				border-color: $color-brand-2;
-				background-color: $color-brand-2;
-				color: $color-white;
-
-				&:hover {
-					border-color: $color-brand-1;
-					background-color: $color-brand-1;
 				}
 			}
 		}

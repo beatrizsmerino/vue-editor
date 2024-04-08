@@ -1,31 +1,14 @@
 <template>
-	<div class="page__inner page__container">
-		<UIIcon
-			name="logo-vue"
-			aria-label="Vue logo"
-			title="Vue logo"
-		/>
-		<HelloWorld msg="Welcome to Your Vue.js App" />
-	</div>
+	<TheWelcome />
 </template>
 
 <script>
-	import HelloWorld from "@/components/Hello/HelloWorld.vue";
+	import TheWelcome from "@/components/Hello/TheWelcome.vue";
 
 	export default {
 		"name": "HomeView",
 		"components": {
-			HelloWorld,
+			TheWelcome,
 		},
 	};
 </script>
-
-<style lang="scss" scoped>
-	.page-home {
-		.icon-logo-vue {
-			width: 15rem;
-			height: 15rem;
-			margin: 0 auto 3rem;
-		}
-	}
-</style>
