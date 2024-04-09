@@ -6,7 +6,6 @@
 .git
 .nuxt
 dist
-vite-project
 
 # FILES
 .gitignore
