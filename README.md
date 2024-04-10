@@ -7,7 +7,9 @@
 
 # Vue editor
 
-![Vue editor](./README/images/vue-editor-v1.jpg)
+| v1                                               | v2                                               |
+| ------------------------------------------------ | ------------------------------------------------ |
+| ![Vue editor](./README/images/vue-editor-v1.jpg) | ![Vue editor](./README/images/vue-editor-v2.jpg) |
 
 ## 🎯 Description
 
