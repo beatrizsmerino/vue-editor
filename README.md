@@ -10,11 +10,6 @@
 | v1                                               | v2                                               |
 | ------------------------------------------------ | ------------------------------------------------ |
 | ![Vue editor](./README/images/vue-editor-v1.jpg) | ![Vue editor](./README/images/vue-editor-v2.jpg) |
-| `vue@2`                                          | `vue@2`                                          |
-| `@vue/cli` </br> `webpack` </br> `babel`         | `vite`                                           |
-| `vue-json-editor`                                | `json-editor-vue`                                |
-| `svg-symbol-sprite-loader`                       | `vite-plugin-svg-icons`                          |
-| `vue-clipboard2`                                 | `v-clipboard`                                    |
 
 ## 🎯 Description
 
@@ -25,6 +20,14 @@
 Maybe someone will find it helpful too 😁
 
 ## 🏗️ Developed with
+
+| v1                                       | v2                      |
+| ---------------------------------------- | ----------------------- |
+| `vue@2`                                  | `vue@2`                 |
+| `@vue/cli` </br> `webpack` </br> `babel` | `vite`                  |
+| `vue-json-editor`                        | `json-editor-vue`       |
+| `svg-symbol-sprite-loader`               | `vite-plugin-svg-icons` |
+| `vue-clipboard2`                         | `v-clipboard`           |
 
 - The [`vue-json-editor`](https://www.npmjs.com/package/vue-json-editor) package is a vue component that can be used to create a json editor.
 
