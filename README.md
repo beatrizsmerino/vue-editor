@@ -10,6 +10,7 @@
 | v1                                               | v2                                               |
 | ------------------------------------------------ | ------------------------------------------------ |
 | ![Vue editor](./README/images/vue-editor-v1.jpg) | ![Vue editor](./README/images/vue-editor-v2.jpg) |
+| `vue@2`, `@vue/cli`, `webpack`, `babel`, `vue-json-editor`, `svg-symbol-sprite-loader`, `vue-clipboard2` | `vue@2`, `vite`, `json-editor-vue`, `vite-plugin-svg-icons`, `v-clipboard` |
 
 ## 🎯 Description
 
