@@ -48,6 +48,14 @@ Because of this, several packages have had to be replaced to be compatible with 
 
 ## 🚀 Commands
 
+| v1       | v2        |
+| -------- | --------- |
+| `serve`  | `dev`     |
+| `build`  | `build`   |
+|          | `preview` |
+| `lint`   | `lint`    |
+| `deploy` | `deploy`  |
+
 ### Install dependencies
 
 ```bash
