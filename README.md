@@ -19,7 +19,7 @@
 
 Maybe someone will find it helpful too 😁
 
-## 🏗️ Developed with
+## 🔖 Tags versions
 
 | v1                                       | v2                      |
 | ---------------------------------------- | ----------------------- |
@@ -28,8 +28,6 @@ Maybe someone will find it helpful too 😁
 | `vue-json-editor`                        | `json-editor-vue`       |
 | `svg-symbol-sprite-loader`               | `vite-plugin-svg-icons` |
 | `vue-clipboard2`                         | `v-clipboard`           |
-
-## 🔖 Tags versions
 
 ### v1.x.x
 
