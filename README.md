@@ -68,10 +68,20 @@ npm install
 npm run serve
 ```
 
+```bash
+npm run dev
+```
+
 ### Compiles and minifies for production
 
 ```bash
 npm run build
+```
+
+### Preview build code for production
+
+```bash
+npm run preview
 ```
 
 ### Lints and fixes files
