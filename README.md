@@ -29,6 +29,8 @@ Maybe someone will find it helpful too 😁
 | `svg-symbol-sprite-loader`               | `vite-plugin-svg-icons` |
 | `vue-clipboard2`                         | `v-clipboard`           |
 
+## 🔖 Tags versions
+
 - The [`vue-json-editor`](https://www.npmjs.com/package/vue-json-editor) package is a vue component that can be used to create a json editor.
 
 - The [`svg-symbol-sprite-loader`](https://www.npmjs.com/package/svg-symbol-sprite-loader) package is a webpack loader and plugin for creating SVG sprites.  
