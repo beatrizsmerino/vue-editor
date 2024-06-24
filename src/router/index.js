@@ -1,8 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import About from "../views/About.vue";
-import Editors from "../views/Editors.vue";
 
 Vue.use(VueRouter);
 
@@ -10,28 +7,24 @@ const routes = [
 	{
 		"path": "/",
 		"name": "Home",
-		"component": Home,
-	},
-	{
-		"path": "/home",
-		"name": "Home",
-		"component": Home,
+		"component": () => import("../views/HomeView.vue"),
+		"alias": "/home",
 	},
 	{
 		"path": "/about",
 		"name": "About",
-		"component": About,
+		"component": () => import("../views/AboutView.vue"),
 	},
 	{
 		"path": "/editors",
 		"name": "Editors",
-		"component": Editors,
+		"component": () => import("../views/EditorsView.vue"),
 	},
 ];
 
 const router = new VueRouter({
 	"mode": "history",
-	"base": process.env.BASE_URL,
+	"base": import.meta.env.BASE_URL,
 	routes,
 });
 
