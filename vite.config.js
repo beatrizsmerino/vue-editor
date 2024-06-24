@@ -24,6 +24,7 @@ export default defineConfig({
 		},
 		"extensions": [
 			".mjs",
+			".cjs",
 			".js",
 			".ts",
 			".jsx",
