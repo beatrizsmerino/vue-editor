@@ -1,6 +1,6 @@
-// GENERICS
-// reset-personal
-// ------------------
+// BASE
+// RESET
+// =================================================
 
 * {
 	&,
@@ -9,8 +9,10 @@
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
+		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+		font-weight: normal;
 	}
 }
 
@@ -104,14 +106,14 @@ video {
 }
 
 // FONT
-// =================================================
+// ------------------
 textarea,
 address {
 	font-style: normal;
 }
 
 // TEXT
-// =================================================
+// ------------------
 a,
 span {
 	display: inline-block;
@@ -137,7 +139,7 @@ table {
 }
 
 // IMAGE
-// =================================================
+// ------------------
 img {
 	width: 100%;
 	font-style: italic;
@@ -146,7 +148,7 @@ img {
 }
 
 // FORM
-// =================================================
+// ------------------
 input,
 button,
 select {
@@ -175,8 +177,8 @@ textarea {
 }
 
 input {
-	&[type='submit'],
-	&[type='reset'] {
+	&[type="submit"],
+	&[type="reset"] {
 		cursor: pointer;
 	}
 }

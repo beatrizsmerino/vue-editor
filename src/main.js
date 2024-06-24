@@ -3,12 +3,18 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import "@/assets/images/icons/icons-import.js";
-import Icon from "@/components/Icon";
-Vue.component("Icon", Icon);
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
+Vue.component("DefaultLayout", DefaultLayout);
 
-import VueClipboard from "vue-clipboard2";
-Vue.use(VueClipboard);
+import UIButton from "@/components/UI/UIButton.vue";
+Vue.component("UIButton", UIButton);
+
+import "virtual:svg-icons-register";
+import UIIcon from "@/components/UI/UIIcon.vue";
+Vue.component("UIIcon", UIIcon);
+
+import Clipboard from "v-clipboard";
+Vue.use(Clipboard);
 
 Vue.config.productionTip = false;
 

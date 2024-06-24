@@ -2,9 +2,13 @@
 	"[vue]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"editor.accessibilitySupport": "off",
 	"editor.bracketPairColorization.enabled": true,
 	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
 		"source.fixAll.eslint": "explicit",
 		"source.fixAll.markdownlint": "explicit",
 		"source.fixAll.prettier": "explicit",
@@ -43,6 +47,8 @@
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
+	"files.autoSave": "onFocusChange",
+	"files.autoSaveDelay": 500,
 	"files.exclude": {
 		"**/.git": false
 	},
@@ -85,6 +91,7 @@
 	},
 	"terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'",
 	"terminal.integrated.fontSize": 14,
+	"vetur.validation.template": false,
 	"window.zoomLevel": 2,
 	"workbench.colorTheme": "Better Solarized Dark Italics",
 	"workbench.iconTheme": "material-icon-theme"
