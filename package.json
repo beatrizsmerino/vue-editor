@@ -57,6 +57,10 @@
 		"vite": "^5.1.6"
 	},
 	"resolutions": {},
+	"overrides": {
+		"micromatch": "^4.0.7",
+		"svg-baker": "^2.0.2"
+	},
 	"engines": {
 		"node": "20.11.0",
 		"npm": "10.4.0"
