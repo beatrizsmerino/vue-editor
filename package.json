@@ -20,7 +20,7 @@
 		"eslint:fix": "eslint \"**/*.{json,js,mjs,vue}\" --fix --ignore-path .eslintignore",
 		"stylelint:fix": "stylelint \"**/*.{css,scss,sass,vue}\" --fix --ignore-path .stylelintignore",
 		"lint": "npm run prettier:fix && npm run eslint:fix && npm run stylelint:fix",
-		"deploy": "node gh-pages-deploy.mjs"
+		"deploy": "node gh-pages-deploy.js"
 	},
 	"dependencies": {
 		"chalk": "^5.3.0",
