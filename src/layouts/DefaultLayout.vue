@@ -22,10 +22,13 @@
 			"$route": {
 				handler(to, from) {
 					const html = document.getElementsByTagName("html")[0];
+					const title = document.getElementsByTagName("title")[0];
 					const body = document.getElementsByTagName("body")[0];
 
 					from?.name && html.classList.remove("page", `page-${from.name.toLowerCase()}`);
 					to?.name && html.classList.add("page", `page-${to.name.toLowerCase()}`);
+
+					title.innerText = `${to.name} | Vue Editor`;
 
 					body.classList.add("page__body");
 				},
