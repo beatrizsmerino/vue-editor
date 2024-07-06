@@ -5,13 +5,12 @@
 		</h2>
 		<div class="editor-json__content">
 			<JsonEditorVue
+				v-model="json"
 				class="json-editor-vue jse-theme-dark"
 				mode="text"
 				:ask-to-format="true"
 				:read-only="false"
 				:indentation="4"
-				:model-value="json"
-				@update:modelValue="updateData"
 			/>
 			<div class="editor-json__actions">
 				<UIButton
@@ -38,7 +37,7 @@
 </template>
 
 <script setup>
-	import { ref, onMounted } from "vue";
+	import { ref, onMounted, watch } from "vue";
 	import "vanilla-jsoneditor/themes/jse-theme-dark.css";
 	import JsonEditorVue from "json-editor-vue";
 	import { Clipboard } from "v-clipboard";
@@ -91,6 +90,10 @@
 		alert("Failed to copy JSON to the clipboard");
 		console.error("Failed to copy JSON to the clipboard:", error);
 	};
+
+	watch(json, newValue => {
+		updateData(newValue);
+	});
 
 	onMounted(() => {
 		getData(props.apiUrl);
