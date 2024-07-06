@@ -1,5 +1,8 @@
 <template>
-	<button class="button">
+	<button
+		class="button"
+		@click="handleClick"
+	>
 		<UIIcon
 			:name="buttonIcon"
 			:aria-label="buttonLabel"
@@ -24,6 +27,11 @@
 			"buttonText": {
 				"type": String,
 				"required": true,
+			},
+		},
+		"methods": {
+			handleClick() {
+				this.$emit("click");
 			},
 		},
 	};
