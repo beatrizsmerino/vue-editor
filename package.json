@@ -32,7 +32,7 @@
 		"vuex": "^3.6.2"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.4.0",
+		"@commitlint/cli": "^19.4.1",
 		"@commitlint/config-conventional": "^19.2.2",
 		"@vitejs/plugin-vue2": "^2.3.1",
 		"@vue/eslint-config-prettier": "^9.0.0",
