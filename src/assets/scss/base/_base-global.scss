@@ -1,6 +1,8 @@
 // BASE
 // GLOBAL
 // =================================================
+@use "../abstracts/variables/abstracts-variables-colors" as *;
+@use "../abstracts/variables/abstracts-variables-fonts" as *;
 
 *::selection {
 	color: $color-white;
