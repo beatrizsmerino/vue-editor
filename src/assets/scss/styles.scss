@@ -4,8 +4,10 @@
 
 // ABSTRACTS (variables, mixins, functions)
 //----------------------------------------------------------------------
-@import "abstracts/variables/abstracts-variables-breakpoints";
-@import "abstracts/variables/abstracts-variables-colors";
-@import "abstracts/variables/abstracts-variables-fonts";
+@forward "abstracts/functions/abstracts-functions-contains";
 // ------------------
-@import "abstracts/mixins/abstracts-mixins-media";
+@forward "abstracts/mixins/abstracts-mixins-media";
+// ------------------
+@forward "abstracts/variables/abstracts-variables-breakpoints";
+@forward "abstracts/variables/abstracts-variables-colors";
+@forward "abstracts/variables/abstracts-variables-fonts";
