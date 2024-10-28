@@ -1,6 +1,7 @@
 // ABSTRACTS - MIXINS
 // MEDIA
 // =================================================
+@use "../variables/abstracts-variables-breakpoints" as *;
 
 @function contains($list, $item) {
 	@return index($list, $item) != null;

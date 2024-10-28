@@ -39,7 +39,7 @@ export default defineConfig({
 				"api": "modern-compiler",
 				"additionalData": `
 					@use "sass:color";
-					@import "@/assets/scss/styles";
+					@use "@/assets/scss/styles.scss" as *;
 				`,
 			},
 		},
