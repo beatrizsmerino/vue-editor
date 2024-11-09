@@ -128,7 +128,6 @@
 			@media (width >= 1024px) {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				padding: 0 3.2rem;
 			}
 		}
 
