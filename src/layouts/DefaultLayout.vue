@@ -128,6 +128,7 @@
 			@media (width >= 1024px) {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
+				padding: 0 3.2rem;
 			}
 		}
 
@@ -140,6 +141,7 @@
 			padding-bottom: 5rem;
 
 			@media (width >= 1024px) {
+				height: 80vh;
 				padding-top: 0;
 				padding-bottom: 0;
 			}
