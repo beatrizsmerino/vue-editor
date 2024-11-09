@@ -73,7 +73,7 @@
 </script>
 
 <template>
-	<div>
+	<div class="the-welcome">
 		<WelcomeItem
 			v-for="item in data"
 			:key="item.icon"
@@ -92,3 +92,11 @@
 		</WelcomeItem>
 	</div>
 </template>
+
+<style lang="scss" scoped>
+	.the-welcome {
+		@media (width >= 1024px) {
+			overflow-y: scroll;
+		}
+	}
+</style>

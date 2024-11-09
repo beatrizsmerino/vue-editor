@@ -141,6 +141,7 @@
 			padding-bottom: 5rem;
 
 			@media (width >= 1024px) {
+				height: 80vh;
 				padding-top: 0;
 				padding-bottom: 0;
 			}
