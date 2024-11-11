@@ -34,7 +34,7 @@
 			@media (width >= 1024px) {
 				content: " ";
 				position: absolute;
-				left: 0;
+				left: 2.6rem;
 				height: calc(50% - 2.5rem);
 				border-left: 0.1rem solid var(--color-border);
 			}
@@ -79,7 +79,7 @@
 			@media (width >= 1024px) {
 				position: absolute;
 				top: calc(50% - 2.5rem);
-				left: -2.6rem;
+				left: 0;
 				width: 5rem;
 				height: 5rem;
 				border: 0.1rem solid var(--color-border);
