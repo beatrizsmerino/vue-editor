@@ -28,7 +28,7 @@
 
 <style lang="scss" scoped>
 	.page-header {
-		max-height: 100vh;
+		max-height: 80vh;
 		line-height: 1.5;
 
 		@media (width >= 1024px) {
