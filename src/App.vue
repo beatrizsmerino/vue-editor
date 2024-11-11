@@ -9,6 +9,6 @@
 </script>
 
 <style lang="scss">
-	@import "@/assets/scss/base/base-reset";
-	@import "@/assets/scss/base/base-global";
+	@use "@/assets/scss/base/base-reset";
+	@use "@/assets/scss/base/base-global";
 </style>
