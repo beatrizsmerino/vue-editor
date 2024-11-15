@@ -4,6 +4,20 @@
 @use "../abstracts/variables/abstracts-variables-colors" as *;
 @use "../abstracts/variables/abstracts-variables-fonts" as *;
 
+* {
+	&,
+	&:before,
+	&:after {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-weight: normal;
+	}
+}
+
 *::selection {
 	color: $color-white;
 	background-color: $color-brand-1;

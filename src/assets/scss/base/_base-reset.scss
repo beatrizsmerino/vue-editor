@@ -1,20 +1,9 @@
 // BASE
 // RESET
 // =================================================
-
-* {
-	&,
-	&:before,
-	&:after {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-		text-rendering: optimizeLegibility;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		font-weight: normal;
-	}
-}
+// http://meyerweb.com/eric/tools/css/reset/
+// v2.0 | 20110126
+// License: none (public domain)
 
 html,
 body,
@@ -99,86 +88,50 @@ audio,
 video {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-*:focus {
-	outline: 0;
-}
-
-// FONT
-// ----------------------------------------------------------------------
-textarea,
-address {
-	font-style: normal;
-}
-
-// TEXT
-// ----------------------------------------------------------------------
-a,
-span {
-	display: inline-block;
-}
-
-a {
-	text-decoration: none;
-	outline: none;
-}
-
-p {
-	&:only-child {
-		margin: 0;
-	}
-
-	&:not(:last-child) {
-		margin-bottom: 10px;
-	}
-}
-
-table {
-	width: 100%;
-}
-
-// IMAGE
-// ----------------------------------------------------------------------
-img {
-	width: 100%;
-	font-style: italic;
-	vertical-align: middle;
+// HTML5 display-role reset for older browsers
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 
-// FORM
-// ----------------------------------------------------------------------
-input,
-button,
-select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+body {
+	line-height: 1;
 }
 
-fieldset {
-	margin: 0;
-	padding: 0;
-	border: none;
+ol,
+ul {
+	list-style: none;
 }
 
-input,
-select,
-textarea {
-	border-radius: 0;
-	outline: none;
+blockquote,
+q {
+	quotes: none;
 }
 
-textarea {
-	min-height: 150px;
-	display: inherit;
-	resize: vertical;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
 }
 
-input {
-	&[type="submit"],
-	&[type="reset"] {
-		cursor: pointer;
-	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
