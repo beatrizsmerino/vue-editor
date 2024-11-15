@@ -4,7 +4,7 @@
 
 // BRAND
 // ----------------------------------------------------------------------
-$font-1:
+$font-brand-1:
 	Inter,
 	-apple-system,
 	BlinkMacSystemFont,
@@ -17,7 +17,6 @@ $font-1:
 	"Droid Sans",
 	"Helvetica Neue",
 	sans-serif;
-$font-2: "Raleway", helvetica, sans-serif;
 
 // CONVERSION
 // ----------------------------------------------------------------------
@@ -40,4 +39,4 @@ $font-size--h6: 1.6rem !default;
 // BASE
 // ----------------------------------------------------------------------
 $font-size--global: 1.6rem !default;
-$line-height--global: 2.4rem !default;
+$font-line-height--global: 2.4rem !default;

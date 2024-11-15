@@ -4,6 +4,20 @@
 @use "../abstracts/variables/abstracts-variables-colors" as *;
 @use "../abstracts/variables/abstracts-variables-fonts" as *;
 
+* {
+	&,
+	&:before,
+	&:after {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-weight: normal;
+	}
+}
+
 *::selection {
 	color: $color-white;
 	background-color: $color-brand-1;
@@ -17,7 +31,7 @@ textarea,
 select,
 input,
 button {
-	font-family: $font-1;
+	font-family: $font-brand-1;
 }
 
 html {
@@ -34,7 +48,7 @@ body {
 
 #app {
 	font-size: $font-size--global;
-	line-height: $line-height--global;
+	line-height: $font-line-height--global;
 }
 
 // LINK
