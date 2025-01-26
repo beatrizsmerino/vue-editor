@@ -1,5 +1,5 @@
 {
-	"version": "2.4.1",
+	"version": "2.4.2",
 	"private": true,
 	"name": "vue-editor",
 	"description": "Editor online of code made with Vue.",
