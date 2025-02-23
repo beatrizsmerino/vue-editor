@@ -92,11 +92,3 @@
 		</WelcomeItem>
 	</div>
 </template>
-
-<style lang="scss" scoped>
-	.the-welcome {
-		@media (width >= 1024px) {
-			overflow-y: scroll;
-		}
-	}
-</style>
