@@ -12,11 +12,3 @@
 		},
 	};
 </script>
-
-<style lang="scss" scoped>
-	.page-home {
-		@media (width >= 1024px) {
-			overflow-y: hidden;
-		}
-	}
-</style>
