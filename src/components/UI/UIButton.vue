@@ -29,6 +29,9 @@
 				"required": true,
 			},
 		},
+		"emits": [
+			"click",
+		],
 		"methods": {
 			handleClick() {
 				this.$emit("click");
