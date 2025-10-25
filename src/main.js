@@ -1,25 +1,24 @@
-import Vue from "vue";
+import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
-Vue.component("DefaultLayout", DefaultLayout);
-
 import UIButton from "@/components/UI/UIButton.vue";
-Vue.component("UIButton", UIButton);
+import UIIcon from "@/components/UI/UIIcon.vue";
 
 import "virtual:svg-icons-register";
-import UIIcon from "@/components/UI/UIIcon.vue";
-Vue.component("UIIcon", UIIcon);
 
 import Clipboard from "v-clipboard";
-Vue.use(Clipboard);
 
-Vue.config.productionTip = false;
+const app = createApp(App);
 
-new Vue({
-	router,
-	store,
-	"render": h => h(App),
-}).$mount("#app");
+app.component("DefaultLayout", DefaultLayout);
+app.component("UIButton", UIButton);
+app.component("UIIcon", UIIcon);
+
+app.use(router);
+app.use(store);
+app.use(Clipboard);
+
+app.mount("#app");
