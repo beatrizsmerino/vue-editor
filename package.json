@@ -57,5 +57,10 @@
 	"engines": {
 		"node": "22.21.0",
 		"npm": "10.9.4"
+	},
+	"overrides": {
+		"braces": "^3.0.3",
+		"micromatch": "^4.0.8",
+		"postcss": "^8.5.6"
 	}
 }
