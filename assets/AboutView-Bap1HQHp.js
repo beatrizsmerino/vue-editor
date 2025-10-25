@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as s,a as o}from"./index-B6KivQ0l.js";const n={name:"AboutView"},r={class:"page__inner page__container"};function _(c,e,i,p,d,l){return s(),a("div",r,[...e[0]||(e[0]=[o("h1",{class:"page__title"}," This is an about page ",-1)])])}const f=t(n,[["render",_]]);export{f as default};
