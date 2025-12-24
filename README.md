@@ -29,13 +29,13 @@ Maybe someone will find it helpful too 😁
 | `svg-symbol-sprite-loader`               | `vite-plugin-svg-icons` |
 | `vue-clipboard2`                         | `v-clipboard`           |
 
-### v1.x.x
+### [v1.x.x](https://github.com/beatrizsmerino/vue-editor/releases/tag/1.0.0)
 
 - The [`vue-json-editor`](https://www.npmjs.com/package/vue-json-editor) package is a vue component that can be used to create a json editor.
 - The [`svg-symbol-sprite-loader`](https://www.npmjs.com/package/svg-symbol-sprite-loader) package is a `webpack` loader and plugin for [creating SVG symbol sprites with Vue](https://stefan-dietz.eu/vue-svg-symbol-sprites.html).
 - The [`vue-clipboard2`](https://www.npmjs.com/package/vue-clipboard2) package is a simple modern approach to copy text to clipboard using [`clipboard.js`](https://clipboardjs.com) in Vue.
 
-### v2.x.x
+### [v2.x.x](https://github.com/beatrizsmerino/vue-editor/releases/tag/2.0.0)
 
 - This release has followed the [official migration guide from @vue/cli to vite](https://vueschool.io/articles/vuejs-tutorials/how-to-migrate-from-vue-cli-to-vite/) to take advantage of performance improvements and ease of configuration. Unlike [`@vue/cli`](https://cli.vuejs.org/), which uses `webpack` and `babel`, [`vite`](https://www.npmjs.com/package/vite) takes advantage of modern JavaScript features such as native `ES modules`, making the development process faster and more efficient.
 
