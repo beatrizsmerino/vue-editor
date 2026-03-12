@@ -78,9 +78,12 @@
 		"npm": "11.9.0"
 	},
 	"overrides": {
-		"braces": "^3.0.3",
-		"micromatch": "^4.0.8",
-		"postcss": "^8.5.8",
-		"stylelint-config-recommended": "17.0.0"
+		"stylelint-config-recommended-vue": {
+			"stylelint-config-recommended": "17.0.0"
+		},
+		"vite-plugin-svg-icons": {
+			"micromatch": "^4.0.8",
+			"postcss": "^8.5.8"
+		}
 	}
 }
