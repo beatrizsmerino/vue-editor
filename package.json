@@ -47,26 +47,26 @@
 		"v-clipboard": "^3.0.0-next.1",
 		"vite-plugin-svg-icons": "^2.0.1",
 		"vue": "^3.5.22",
-		"vue-router": "^4.6.4",
+		"vue-router": "^5.0.3",
 		"vuex": "^4.1.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^20.3.1",
-		"@commitlint/config-conventional": "^20.3.1",
-		"@vitejs/plugin-vue": "^6.0.3",
+		"@commitlint/cli": "^20.4.3",
+		"@commitlint/config-conventional": "^20.4.3",
+		"@vitejs/plugin-vue": "^6.0.4",
 		"@vue/eslint-config-prettier": "^10.2.0",
 		"eslint": "^8.57.0",
 		"eslint-plugin-json": "^3.1.0",
 		"eslint-plugin-prettier": "^5.5.5",
 		"eslint-plugin-vue": "10.6.2",
 		"husky": "^9.1.7",
-		"lint-staged": "^16.2.7",
+		"lint-staged": "^16.3.3",
 		"postcss": "^8.5.6",
 		"postcss-html": "^1.8.1",
-		"prettier": "^3.8.0",
-		"sass": "^1.97.2",
+		"prettier": "^3.8.1",
+		"sass": "^1.98.0",
 		"stylelint": "^16.26.1",
-		"stylelint-config-property-sort-order-smacss": "^10.0.0",
+		"stylelint-config-property-sort-order-smacss": "^11.1.0",
 		"stylelint-config-recommended-vue": "^1.6.1",
 		"stylelint-config-sass-guidelines": "^12.1.0",
 		"stylelint-config-standard": "^39.0.1",
@@ -74,8 +74,8 @@
 		"vite": "^7.3.1"
 	},
 	"engines": {
-		"node": "24.13.0",
-		"npm": "11.6.2"
+		"node": "24.14.0",
+		"npm": "11.9.0"
 	},
 	"overrides": {
 		"braces": "^3.0.3",
