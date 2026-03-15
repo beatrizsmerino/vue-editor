@@ -1,0 +1,1 @@
+import{c as e,g as t,o as n,r}from"./index-CJV2KPRp.js";var i={name:`AboutView`},a={class:`page__inner page__container`};function o(r,i,o,s,c,l){return t(),e(`div`,a,[...i[0]||=[n(`h1`,{class:`page__title`},` This is an about page `,-1)]])}var s=r(i,[[`render`,o]]);export{s as default};
