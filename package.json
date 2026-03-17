@@ -52,7 +52,7 @@
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^20.5.0",
-		"@commitlint/config-conventional": "^20.4.4",
+		"@commitlint/config-conventional": "^20.5.0",
 		"@vitejs/plugin-vue": "^6.0.5",
 		"@vue/eslint-config-prettier": "^10.2.0",
 		"eslint": "^8.57.0",
