@@ -52,6 +52,7 @@ module.exports = {
 				],
 			},
 		],
+		"declaration-property-value-no-unknown": null,
 		"declaration-block-no-duplicate-custom-properties": true,
 		"declaration-block-no-duplicate-properties": [
 			true,
@@ -115,6 +116,7 @@ module.exports = {
 			},
 		],
 		"scss/at-rule-no-unknown": true,
+		"scss/declaration-property-value-no-unknown": true,
 		"scss/no-global-function-names": null,
 		"selector-class-pattern": [
 			"^([a-z]+[a-z0-9]*)(-[a-z0-9]+)*(__[a-z]+[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z]+[a-z0-9]+(-[a-z0-9]+)*)?$|^jsoneditor.*$",
