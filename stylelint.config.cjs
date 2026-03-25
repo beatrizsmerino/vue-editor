@@ -22,6 +22,15 @@ module.exports = {
 				],
 			},
 		],
+		"annotation-no-unknown": [
+			true,
+			{
+				"ignoreAnnotations": [
+					"default",
+					"global",
+				],
+			},
+		],
 		"at-rule-no-unknown": null,
 		"block-no-empty": true,
 		"color-hex-length": "long",
