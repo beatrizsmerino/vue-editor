@@ -178,4 +178,14 @@ module.exports = {
 		"@stylistic/indentation": "tab",
 		"@stylistic/string-quotes": "double",
 	},
+	"overrides": [
+		{
+			"files": [
+				"**/abstracts/mixins/_abstracts-mixins-media.scss",
+			],
+			"rules": {
+				"media-query-no-invalid": null,
+			},
+		},
+	],
 };
