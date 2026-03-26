@@ -10,6 +10,15 @@ module.exports = {
 		"stylelint-scss",
 	],
 	"rules": {
+		"annotation-no-unknown": [
+			true,
+			{
+				"ignoreAnnotations": [
+					"default",
+					"global",
+				],
+			},
+		],
 		"at-rule-empty-line-before": [
 			"always",
 			{
@@ -22,15 +31,6 @@ module.exports = {
 				],
 				"ignoreAtRules": [
 					"else",
-				],
-			},
-		],
-		"annotation-no-unknown": [
-			true,
-			{
-				"ignoreAnnotations": [
-					"default",
-					"global",
 				],
 			},
 		],
@@ -64,7 +64,6 @@ module.exports = {
 				],
 			},
 		],
-		"declaration-property-value-no-unknown": null,
 		"declaration-block-no-duplicate-custom-properties": true,
 		"declaration-block-no-duplicate-properties": [
 			true,
@@ -89,6 +88,7 @@ module.exports = {
 				],
 			},
 		],
+		"declaration-property-value-no-unknown": null,
 		"font-family-no-duplicate-names": true,
 		"font-family-no-missing-generic-family-keyword": true,
 		"function-calc-no-unspaced-operator": true,
