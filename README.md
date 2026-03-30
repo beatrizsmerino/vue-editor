@@ -90,6 +90,8 @@ npm run prepare
 
 ### Compiles and hot-reloads for development
 
+Launch the development server on `localhost` with hot reload. Use `serve` for v1 (`Vue CLI`) or `dev` for v2 (`Vite`).
+
 ```bash
 npm run serve
 ```
