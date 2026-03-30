@@ -58,6 +58,8 @@ Because of this, several packages have had to be replaced to be compatible with 
 
 ### Install dependencies
 
+Install all dependencies listed in `package.json`.
+
 ```bash
 npm install
 ```
