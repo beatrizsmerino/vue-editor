@@ -110,6 +110,8 @@ npm run build
 
 ### Preview build code for production
 
+Preview the production build locally before deploying. Only available in v2 (`Vite`).
+
 ```bash
 npm run preview
 ```
