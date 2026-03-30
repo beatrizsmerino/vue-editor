@@ -118,6 +118,8 @@ npm run preview
 
 ### Lints and fixes files
 
+Run [Prettier](https://prettier.io/) (`prettier:fix`), [ESLint](https://eslint.org/) (`eslint:fix`) and [Stylelint](https://stylelint.io/) (`stylelint:fix`) to format and lint all project files.
+
 ```bash
 npm run lint
 ```
