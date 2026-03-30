@@ -114,6 +114,14 @@ npm run preview
 npm run lint
 ```
 
+### Format files with Prettier
+
+Format CSS, SCSS, JSON, YAML, JS and Vue files with [Prettier](https://prettier.io/).
+
+```bash
+npm run prettier:fix
+```
+
 ### Publish in Github Pages
 
 ```bash
