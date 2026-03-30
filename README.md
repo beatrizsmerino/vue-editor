@@ -130,6 +130,14 @@ Lint and fix JSON, JS and Vue files with [ESLint](https://eslint.org/).
 npm run eslint:fix
 ```
 
+### Lint and fix styles with Stylelint
+
+Lint and fix CSS, SCSS and Vue files with [Stylelint](https://stylelint.io/).
+
+```bash
+npm run stylelint:fix
+```
+
 ### Publish in Github Pages
 
 ```bash
