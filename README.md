@@ -62,6 +62,14 @@ Because of this, several packages have had to be replaced to be compatible with 
 npm install
 ```
 
+### Clean install dependencies
+
+Remove `node_modules` and `package-lock.json` to reinstall from scratch.
+
+```bash
+npm run install:clean
+```
+
 ### Compiles and hot-reloads for development
 
 ```bash
