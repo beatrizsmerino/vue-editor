@@ -100,22 +100,6 @@ npm run serve
 npm run dev
 ```
 
-### Compiles and minifies for production
-
-Build and minify the project for production.
-
-```bash
-npm run build
-```
-
-### Preview build code for production
-
-Preview the production build locally before deploying. Only available in v2 (`Vite`).
-
-```bash
-npm run preview
-```
-
 ### Lints and fixes files
 
 Run [Prettier](https://prettier.io/) (`prettier:fix`), [ESLint](https://eslint.org/) (`eslint:fix`) and [Stylelint](https://stylelint.io/) (`stylelint:fix`) to format and lint all project files.
@@ -146,6 +130,22 @@ Lint and fix CSS, SCSS and Vue files with [Stylelint](https://stylelint.io/).
 
 ```bash
 npm run stylelint:fix
+```
+
+### Compiles and minifies for production
+
+Build and minify the project for production.
+
+```bash
+npm run build
+```
+
+### Preview build code for production
+
+Preview the production build locally before deploying. Only available in v2 (`Vite`).
+
+```bash
+npm run preview
 ```
 
 ### Publish in Github Pages
