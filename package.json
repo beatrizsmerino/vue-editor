@@ -1,10 +1,14 @@
 {
-	"version": "3.4.1",
+	"version": "3.5.0",
 	"private": true,
 	"name": "vue-editor",
 	"description": "Editor online of code made with Vue.",
-	"author": "beatrizsmerino@gmail.com",
-	"license": "ISC",
+	"author": {
+		"name": "Beatriz Sopeña Merino",
+		"email": "beatrizsmerino@gmail.com",
+		"url": "https://github.com/beatrizsmerino"
+	},
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/beatrizsmerino/vue-editor.git"
@@ -29,14 +33,14 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"prettier:fix": "prettier --write \"./**/*.{css,scss,sass,json,js,cjs,mjs,vue}\"",
-		"eslint:fix": "eslint \"**/*.{json,js,cjs,mjs,vue}\" --fix --ignore-path .eslintignore",
-		"stylelint:fix": "stylelint \"**/*.{css,scss,sass,vue}\" --fix --ignore-path .stylelintignore",
+		"prettier:fix": "prettier --write './**/*.{css,scss,json,yml,yaml,js,cjs,mjs,vue}'",
+		"eslint:fix": "eslint './**/*.{json,js,cjs,mjs,vue}' --fix --ignore-path .eslintignore",
+		"stylelint:fix": "stylelint './**/*.{css,scss,vue}' --fix --ignore-path .stylelintignore",
 		"lint": "npm run prettier:fix && npm run eslint:fix && npm run stylelint:fix",
 		"deploy": "node gh-pages-deploy.js"
 	},
 	"dependencies": {
-		"chalk": "^5.6.0",
+		"chalk": "^5.6.2",
 		"execa": "^9.6.1",
 		"json-editor-vue": "^0.18.1",
 		"node-emoji": "^2.2.0",
@@ -74,8 +78,12 @@
 		"npm": "11.11.0"
 	},
 	"overrides": {
-		"braces": "^3.0.3",
-		"micromatch": "^4.0.8",
-		"postcss": "^8.5.8"
+		"stylelint-config-recommended-vue": {
+			"stylelint-config-recommended": "17.0.0"
+		},
+		"vite-plugin-svg-icons": {
+			"micromatch": "^4.0.8",
+			"postcss": "^8.5.8"
+		}
 	}
 }
