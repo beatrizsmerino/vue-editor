@@ -199,7 +199,7 @@ module.exports = {
 	"overrides": [
 		{
 			"files": [
-				"**/abstracts/mixins/_abstracts-mixins-media.scss",
+				"src/assets/scss/abstracts/mixins/_abstracts-mixins-media.scss",
 			],
 			"rules": {
 				"media-query-no-invalid": null,
