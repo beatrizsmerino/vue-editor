@@ -29,8 +29,8 @@
 			padding: 0.64rem 0 1.6rem calc(var(--section-gap) / 2);
 		}
 
-		&:before,
-		&:after {
+		&::before,
+		&::after {
 			@media (width >= 1024px) {
 				content: " ";
 				position: absolute;
@@ -40,20 +40,20 @@
 			}
 		}
 
-		&:before {
+		&::before {
 			@media (width >= 1024px) {
 				bottom: calc(50% + 2.5rem);
 			}
 		}
 
-		&:after {
+		&::after {
 			@media (width >= 1024px) {
 				top: calc(50% + 2.5rem);
 			}
 		}
 
 		&:first-of-type {
-			&:before {
+			&::before {
 				@media (width >= 1024px) {
 					display: none;
 				}
@@ -61,7 +61,7 @@
 		}
 
 		&:last-of-type {
-			&:after {
+			&::after {
 				@media (width >= 1024px) {
 					display: none;
 				}
