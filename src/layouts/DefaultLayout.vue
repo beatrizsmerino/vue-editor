@@ -91,17 +91,17 @@
 		}
 
 		&__title {
-			margin-bottom: $font-size--h1;
+			margin-bottom: $font-size-h1;
 			color: var(--color-heading);
-			font-size: $font-size--h1;
-			line-height: $font-size--h1;
+			font-size: $font-size-h1;
+			line-height: $font-size-h1;
 			text-align: center;
 		}
 
 		&__subtitle {
-			margin-bottom: $font-size--h3;
-			font-size: $font-size--h3;
-			line-height: $font-size--h3;
+			margin-bottom: $font-size-h3;
+			font-size: $font-size-h3;
+			line-height: $font-size-h3;
 			text-align: center;
 		}
 

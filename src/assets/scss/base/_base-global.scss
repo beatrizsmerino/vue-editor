@@ -37,18 +37,18 @@ button {
 html {
 	overflow-x: hidden;
 	background-color: $color-white;
-	font-size: $font-size--html;
+	font-size: $font-size-html;
 	font-weight: 400;
 }
 
 body {
 	background-color: $color-white;
-	font-size: $font-size--body;
+	font-size: $font-size-body;
 }
 
 #app {
-	font-size: $font-size--global;
-	line-height: $font-line-height--global;
+	font-size: $font-size-global;
+	line-height: $font-line-height-global;
 }
 
 // LINK

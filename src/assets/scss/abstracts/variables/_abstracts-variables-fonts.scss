@@ -23,19 +23,19 @@ $font-brand-1: inter,
 // 1em = 16px -> default css
 // 16px * 0.625 = 10px -> now
 // 1.6em * 10px = 16px -> use
-$font-size--html: 62.5%;
-$font-size--body: 10px;
+$font-size-html: 62.5%;
+$font-size-body: 10px;
 
 // H1-H6
 // ----------------------------------------------------------------------
-$font-size--h1: 3.6rem !default;
-$font-size--h2: 2.8rem !default;
-$font-size--h3: 2.4rem !default;
-$font-size--h4: 2rem !default;
-$font-size--h5: 1.8rem !default;
-$font-size--h6: 1.6rem !default;
+$font-size-h1: 3.6rem !default;
+$font-size-h2: 2.8rem !default;
+$font-size-h3: 2.4rem !default;
+$font-size-h4: 2rem !default;
+$font-size-h5: 1.8rem !default;
+$font-size-h6: 1.6rem !default;
 
 // BASE
 // ----------------------------------------------------------------------
-$font-size--global: 1.6rem !default;
-$font-line-height--global: 2.4rem !default;
+$font-size-global: 1.6rem !default;
+$font-line-height-global: 2.4rem !default;
