@@ -113,7 +113,7 @@
 			}
 
 			:deep(.jse-modal .svelte-select.focused) {
-				border-color: #{$color-brand-1} !important;
+				border-color: $color-brand-1 !important;
 			}
 
 			:deep(.json-editor-vue) {
